@@ -1,0 +1,37 @@
+
+.home__container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+
+  .home__main--content {
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+
+    .home__main--content--left{
+      padding-right: 20px;
+      width: 100%;
+
+      .home__title {
+        margin-bottom: 20px;
+      }
+
+        .home__presentation {
+          text-align: justify;
+          width: 90%;
+        }
+    }
+        .home__picture {
+          background-image: url("./accueil.jpg");
+          background-size: cover;
+          background-position: center;
+          background-color: aqua;
+          width: 40%;
+        }
+    }
+}
