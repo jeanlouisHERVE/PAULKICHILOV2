@@ -3,16 +3,16 @@ import { Route, Switch } from 'react-router-dom';
 // Composants
 import NavbarHeader from 'src/components/NavbarHeader';
 import Home from 'src/components/Home';
-// import Gravures from 'src/components/Gravures';
+import Gravures from 'src/components/Gravures';
 import Monotypes from 'src/components/Monotypes';
-// import Illustrations from 'src/components/Illustrations';
-// import Exhibitions from 'src/components/Exhibitions';
-// import Spectacles from 'src/components/Spectacles';
-// import Blog from 'src/components/Blog';
-// import Shop from 'src/components/Shop';
-// import ConfidentialPolicy from 'src/components/ConfidentialPolicy';
-// import LegalMention from 'src/components/LegalMention';
-// import Contact from 'src/components/Contact';
+import Illustrations from 'src/components/Illustrations';
+import Exhibitions from 'src/components/Exhibitions';
+import Spectacles from 'src/components/Spectacles';
+import Blog from 'src/components/Blog';
+import Shop from 'src/components/Shop';
+import ConfidentialPolicy from 'src/components/ConfidentialPolicy';
+import LegalMention from 'src/components/LegalMention';
+import Contact from 'src/components/Contact';
 import NotFound from 'src/components/NotFound';
 import Footer from 'src/components/Footer';
 
@@ -33,7 +33,7 @@ const App = () => {
         <Route path="/galerie/monotypes" exact>
           <Monotypes />
         </Route>
-        {/* <Route path="/galerie/gravures">
+        <Route path="/galerie/gravures">
           <Gravures />
         </Route>
         <Route path="/galerie/illustrations">
@@ -59,7 +59,7 @@ const App = () => {
         </Route>
         <Route path="/confidentialPolicy">
           <ConfidentialPolicy />
-        </Route> */}
+        </Route>
         <Route>
           <NotFound />
         </Route>

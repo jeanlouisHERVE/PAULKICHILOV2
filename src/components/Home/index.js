@@ -1,9 +1,11 @@
 import './styles.scss';
 import JumbotronHome from 'src/components/Jumbotron';
+import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 
 const Home = () => (
 
   <main className="home__container">
+    <DivHiddenUnderNavbar />
     <JumbotronHome />
     <div className="home__main--content posts-list col-12 d-flex flex-row">
       <div className="home__main--content--left">

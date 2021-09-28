@@ -5,6 +5,7 @@ const Illustrations = () => {
 
   return (
     <main className={cssClass}>
+    <DivHiddenUnderNavbar />
       <h1 className="posts-title">Illustrations</h1>
     </main>
   );
