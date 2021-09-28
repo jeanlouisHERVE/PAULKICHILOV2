@@ -1,0 +1,35 @@
+.contact__container {
+
+  .contact__picture--under--navbar {
+    background-color: red;
+    height: 30vh;
+
+  }
+
+  .contact__under--navbar{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    .contact__left {
+      width: 40%;
+      padding: 10px;
+
+      h1 {
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+    }
+  
+    .contact__right {
+      background-color: red;
+      width: 60%;
+      height: 50%;
+    }
+
+  }
+
+}
