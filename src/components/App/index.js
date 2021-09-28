@@ -30,7 +30,7 @@ const App = () => {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/galerie/monotypes">
+        <Route path="/galerie/monotypes" exact>
           <Monotypes />
         </Route>
         {/* <Route path="/galerie/gravures">

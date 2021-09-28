@@ -4,7 +4,7 @@ const Monotypes = () => {
   const cssClass = 0;
 
   return (
-    <main className={cssClass}>
+    <main className="monotype-container">
       <h1 className="posts-title">Monotypes</h1>
     </main>
   );
