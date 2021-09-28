@@ -1,5 +1,4 @@
 import './styles.scss';
-import PropTypes from 'prop-types';
 import { Jumbotron, Container } from 'reactstrap';
 
 const JumbotronHome = () => (
