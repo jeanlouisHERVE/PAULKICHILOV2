@@ -1,4 +1,50 @@
-.gravures__container {
 
-    height: 100vh;
+.gravures__container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+
+  .gravures__mainPicture{
+    height: 500px;
+    width: 100vw;
+    background-color: red;
+  }
+
+  .gravures__main--content {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      background-color: pink;
+
+    .gravures_main--content--left{
+      padding-right: 20px;
+      width: 60%;
+      background-color: yellow;
+
+      .gravures__title {
+        margin-bottom: 20px;
+        background-color: chartreuse;
+      }
+
+      .gravures__presentation {
+        text-align: justify;
+      }
+    }     
+  
+
+    .gravures__presentation--right {
+          
+      height: auto;
+      width: 40%;
+
+      .gravures__picture {
+        box-shadow: 7px 7px 7px black;
+        width: 40%;
+      }
+    }
+  }
 }
