@@ -1,6 +1,8 @@
 import './styles.scss';
+import accueil from './accueil.jpg'
 import JumbotronHome from 'src/components/Jumbotron';
 import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
+
 
 const Home = () => (
 
@@ -10,7 +12,7 @@ const Home = () => (
     <div className="home__main--content posts-list col-12 d-flex flex-row">
       <div className="home__main--content--left">
         <h1 className="home__title">Paul KICHILOV</h1>
-        <p className="home__presentation col-6"> Né en Russie en 1966 d’un père russe et d’une mère française.
+        <p className="home__presentation"> Né en Russie en 1966 d’un père russe et d’une mère française.
           Arrivé en France en 1973.
           Après des études de mathématiques embrasse la voie artistique.
           Diplômé de l’Ecole Nationale Supérieure des Arts Décoratifs de Paris en gravure en 1991.
@@ -27,9 +29,11 @@ const Home = () => (
           peut être considérée comme l’une de ses grandes lignes de force.
         </p>
       </div>
-      <div className="home__picture col-6" />
+      <div className="home__presentation--right">
+        <img className="home__picture" src={accueil}/>
+      </div>
     </div>
-  </main>
+</main>
 );
 
 export default Home;

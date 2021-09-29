@@ -1,1 +1,14 @@
+.navBarHeader__container {
 
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+
+  .navBarHeader__left {
+    align-self: right;
+  }
+
+  .navBarHeader__right {
+
+  }
+}

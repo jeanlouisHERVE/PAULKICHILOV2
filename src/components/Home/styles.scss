@@ -12,6 +12,7 @@
       padding: 30px;
       display: flex;
       justify-content: center;
+      align-items: center;
 
     .home__main--content--left{
       padding-right: 20px;
@@ -26,12 +27,18 @@
           width: 90%;
         }
     }
-        .home__picture {
-          background-image: url("./accueil.jpg");
-          background-size: cover;
-          background-position: center;
-          background-color: aqua;
-          width: 40%;
-        }
+       
+  }
+
+    .home__presentation--right {
+          
+      height: auto;
+      width: 40%;
+
+      .home__picture {
+
+
+      }
+
     }
 }
