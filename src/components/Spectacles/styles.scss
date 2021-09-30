@@ -17,21 +17,17 @@
       padding: 30px;
       display: flex;
       align-items: center;
-      background-color: pink;
     
     .spectacles__main--content--left {
-      
       width: 60%;
       padding-right: 40px;
       
       .spectacles__title{
 
-
       }
 
       .spectacles__presentation {
         text-align: justify;
-
       }
 
     }
@@ -48,12 +44,6 @@
 
   }
 
-  .ombrelle__mainPicture{
-    height: 500px;
-    width: 100vw;
-    background-color: red;
-  }
-
   .ombrelle__main--content {
       padding: 30px;
       display: flex;
@@ -66,21 +56,18 @@
 
       display: flex;
       flex-direction: row;
+      align-items: center;
 
       .ombrelle__main--content--left {
-      
         width: 60%;
         padding-right: 40px;
         
-        
         .ombrelle__title{
-  
-  
+          padding-bottom: 20px;
         }
   
         .ombrelle__presentation {
           text-align: justify;
-  
         }
   
       }

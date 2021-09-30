@@ -2,6 +2,7 @@ import './styles.scss';
 import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 import SpectacleList from 'src/components/SpectacleList';
 import plaque from './plaque.jpg'
+import ombrelle1 from './ombrelle1.jpg'
 
 const Spectacles = () => {
   const cssClass = 0;
@@ -53,7 +54,7 @@ Les contes peuvent être racontés en français et en russe.
             </p>
           </div>
           <div className="ombrelle__presentation--right ">
-            <img className="ombrelle__picture" src={plaque}/>
+            <img className="ombrelle__picture" src={ombrelle1}/>
           </div>
         </div>
         <div className="ombrelle__accordion">

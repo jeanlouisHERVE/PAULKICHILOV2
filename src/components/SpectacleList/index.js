@@ -11,7 +11,7 @@ import { FiPlus, FiMinus } from 'react-icons/fi'
     justify-content:center;
     position: relative;
     height: 65vh;
-    background: #fff;
+    background: white;
   `;
 
   const Container = styled.div`
@@ -23,23 +23,25 @@ import { FiPlus, FiMinus } from 'react-icons/fi'
 
   const Wrap = styled.div`
   background: black;
-  color: #fff;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 50px;
+  height: 40px;
   cursor:pointer;
 
   h1 {
     padding: 2rem;
     font-size: 1.5rem;
     text-transform: uppercase;
+    margin: 0px;
   }
 
 
   span {
     margin-right: 1.5rem;
+    color: white;
   }
   `;
 
@@ -61,16 +63,19 @@ import { FiPlus, FiMinus } from 'react-icons/fi'
       text-align: justify;
       color:black;
       width:50%;
+      margin: 0px;
   `;
   const AgeParagraph = styled.p`
       font-size: 18px;
       padding: 10px 0px 10px 20px;
       text-align: left;
+      margin: 0px;
   `;
   const DurationParagraph = styled.p`
       font-size: 18px;
       padding: 10px 0px 10px 20px;
       text-align: left;
+      margin: 0px;
   `;
 
   const LeftSide = styled.div`
