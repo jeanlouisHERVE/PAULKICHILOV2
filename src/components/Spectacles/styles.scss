@@ -1,0 +1,89 @@
+.spectacles__container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+
+  .spectacles__mainPicture{
+    height: 500px;
+    width: 100vw;
+    background-color: red;
+  }
+
+  .spectacles__main--content {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      background-color: pink;
+    
+    .spectacles__main--content--left {
+      
+      width: 60%;
+      padding-right: 40px;
+      
+      .spectacles__title{
+
+
+      }
+
+      .spectacles__presentation {
+        text-align: justify;
+
+      }
+
+    }
+    .spectacles__presentation--right {
+      width: 40%;
+
+      .spectacles__picture {
+        box-shadow: 7px 7px 7px black;
+        width: 100%;
+        height: auto;
+      }
+
+    }
+
+  }
+
+  .ombrelle__mainPicture{
+    height: 500px;
+    width: 100vw;
+    background-color: red;
+  }
+
+  .ombrelle__main--content {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      background-color: pink;
+    
+    .ombrelle__main--content--left {
+      
+      width: 60%;
+      padding-right: 40px;
+      
+      .ombrelle__title{
+
+
+      }
+
+      .ombrelle__presentation {
+        text-align: justify;
+
+      }
+
+    }
+    .ombrelle__presentation--right {
+      width: 40%;
+
+      .ombrelle__picture {
+        box-shadow: 7px 7px 7px black;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

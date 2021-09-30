@@ -19,32 +19,33 @@
       display: flex;
       align-items: center;
       background-color: pink;
-
-    .gravures_main--content--left{
-      padding-right: 20px;
+    
+    .gravures__main--content--left {
+      
       width: 60%;
-      background-color: yellow;
+      padding-right: 40px;
+      
+      .gravures__title{
 
-      .gravures__title {
-        margin-bottom: 20px;
-        background-color: chartreuse;
+
       }
 
       .gravures__presentation {
         text-align: justify;
-      }
-    }     
-  
 
+      }
+
+    }
     .gravures__presentation--right {
-          
-      height: auto;
       width: 40%;
 
       .gravures__picture {
         box-shadow: 7px 7px 7px black;
-        width: 40%;
+        width: 100%;
+        height: auto;
       }
+
     }
+
   }
 }

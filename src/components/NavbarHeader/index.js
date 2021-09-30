@@ -19,7 +19,6 @@ const NavbarHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-
   return (
     <Navbar color="light" light expand="md" className="navBarHeader__container fixed-top d-flex justify-content-center">
         <div className="navBarHeader__left">

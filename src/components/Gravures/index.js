@@ -1,5 +1,6 @@
 import './styles.scss';
 import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
+import Gallery from 'src/components/Gallery';
 import plaque from './plaque.jpg'
 
 const Gravures = () => {
@@ -10,7 +11,7 @@ const Gravures = () => {
       <DivHiddenUnderNavbar />
       <div className="gravures__mainPicture"></div>
       <div className="gravures__main--content posts-list">
-        <div className="gravures__main--content--left">
+        <div className="gravures__main--content--left ">
           <h1 className="gravures__title">Gravures</h1>
           <p className="gravures__presentation"> « La gravure peut être considérée, 
           de part la variété et la richesse des techniques auxquelles elle fait 
@@ -30,10 +31,11 @@ const Gravures = () => {
               dans l’atelier, ne quitte pas la grotte… »
           </p>
         </div>
-        <div className="gravures__presentation--right">
+        <div className="gravures__presentation--right ">
           <img className="gravures__picture" src={plaque}/>
         </div>
       </div>
+      <Gallery />
 </main>
   );
 };
