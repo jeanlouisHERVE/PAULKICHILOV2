@@ -20,7 +20,7 @@ export const ombrelleData = [
     duration: "25",
     age: "- de 7 ans",
     language: ["français", "russe"],
-    picture:"petitCabanon", 
+    picture:"./petitCabanon", 
     resume:"Un petit dragon guide à tour de rôle un souriceau, une grenouille, une lapine, une renarde et un loup jusqu’à un petit cabanon où ils peuvent se mettre à l’abri du mauvais temps. Lorsque l’ours écrase le cabanon sous son poids, tous les animaux se mettent ensemble au travail pour en construire un nouveau…"
   },
   {

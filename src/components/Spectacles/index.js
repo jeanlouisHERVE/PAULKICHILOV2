@@ -30,33 +30,37 @@ Les contes peuvent être racontés en français et en russe.
         </div>
       </div>
       <div className="ombrelle__main--content posts-list">
-        <div className="ombrelle__main--content--left ">
-          <h1 className="ombrelle__title">L'ombrelle Magique</h1>
-          <p className="ombrelle__presentation">  Des décors qui changent 
-          sans cesse dans une boite-présentoir portée accrochée aux épaules, 
-          dans le dos une grande ombrelle tournant librement et dans laquelle,
-           à l’aide d’aimants, sont dissimulées les marionnettes. Tel est 
-           le Théâtre de l’Ombrelle Magique, un « théâtre dans une valise ».
-          L’esprit de ce travail est de présenter un grand nombre de dessins,
-           travaillés, aboutis, comme s’il s’agissait d’originaux pour un album
-            jeunesse. C’est, en quelque sorte, un livre de grand format qui
-             prend vie. La liberté de mouvements que donne cette structure
-              légère permet de tourner, s’approcher du public ou esquisser
-               un pas de danse en fonction des nécessités de l’interprétation du conte.
-          Le Théâtre de l’Ombrelle Magique a été conçu pour un public 
-          restreint, il est idéal pour faire vivre un conte dans une salle
-           de classe ou une bibliothèque. Les enfants, après avoir vu et écouté
-            le conte, peuvent être à leur tour invités à s’en inspirer : dessiner
-             à leur façon des personnages ou des scènes du conte, écrire un petit
-              texte qui le résume ou le prolonge…
-          </p>
+        <div className="ombrelle__upperPart">
+          <div className="ombrelle__main--content--left ">
+            <h1 className="ombrelle__title">L'ombrelle Magique</h1>
+            <p className="ombrelle__presentation">  Des décors qui changent 
+            sans cesse dans une boite-présentoir portée accrochée aux épaules, 
+            dans le dos une grande ombrelle tournant librement et dans laquelle,
+            à l’aide d’aimants, sont dissimulées les marionnettes. Tel est 
+            le Théâtre de l’Ombrelle Magique, un « théâtre dans une valise ».
+            L’esprit de ce travail est de présenter un grand nombre de dessins,
+            travaillés, aboutis, comme s’il s’agissait d’originaux pour un album
+              jeunesse. C’est, en quelque sorte, un livre de grand format qui
+              prend vie. La liberté de mouvements que donne cette structure
+                légère permet de tourner, s’approcher du public ou esquisser
+                un pas de danse en fonction des nécessités de l’interprétation du conte.
+            Le Théâtre de l’Ombrelle Magique a été conçu pour un public 
+            restreint, il est idéal pour faire vivre un conte dans une salle
+            de classe ou une bibliothèque. Les enfants, après avoir vu et écouté
+              le conte, peuvent être à leur tour invités à s’en inspirer : dessiner
+              à leur façon des personnages ou des scènes du conte, écrire un petit
+                texte qui le résume ou le prolonge…
+            </p>
+          </div>
+          <div className="ombrelle__presentation--right ">
+            <img className="ombrelle__picture" src={plaque}/>
+          </div>
         </div>
-        <div className="ombrelle__presentation--right ">
-          <img className="ombrelle__picture" src={plaque}/>
+        <div className="ombrelle__accordion">
+          <SpectacleList />
         </div>
       </div>
-      <SpectacleList />
-      <SpectacleList />
+      
 </main>
   );
 };
