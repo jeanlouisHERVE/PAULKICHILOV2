@@ -2,10 +2,10 @@ import './styles.scss';
 import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 import OmbrelleList from 'src/components/OmbrelleList';
 import SpectacleList2 from 'src/components/SpectacleList2';
-import plaque from './plaque.jpg'
 import ombrelle1 from './ombrelle1.jpg'
 import spectacle from './spectacle.jpg'
 import publicSpectacle from './publicSpectacle.jpg'
+import paulJouant from './paulJouant.jpg'
 
 const Spectacles = () => {
 
@@ -39,7 +39,7 @@ const Spectacles = () => {
           </p>
         </div>
         <div className="spectacles__presentation--right ">
-          <img className="spectacles__picture" src={plaque}/>
+          <img className="spectacles__picture" src={paulJouant}/>
         </div>
       </div>
       <div className="ombrelle__main--content posts-list">
@@ -95,7 +95,7 @@ const Spectacles = () => {
             </p>
           </div>
           <div className="theater__presentation--right ">
-            <img className="theater__picture" src={spectacle}/>
+            <img className="theater__picture" src={paulJouant}/>
           </div>
         </div>
         <div className="theater__accordion">

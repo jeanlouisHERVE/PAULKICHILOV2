@@ -1,0 +1,40 @@
+
+.legalMention__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+
+  .legalMention__mainPicture {
+    height: 500px;
+    width: 100vw;
+  }
+
+  .legalMention__main--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:60%;
+    margin-right: auto;
+    margin-left: auto;
+
+    h1 {
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    h2 {
+      margin-top: 30px;
+
+    }
+
+    p {
+      margin-top: 10px;
+      margin-bottom: 0px;
+      text-align: justify;
+    }
+
+  }
+
+}
