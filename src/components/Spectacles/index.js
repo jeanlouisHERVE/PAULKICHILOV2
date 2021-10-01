@@ -5,14 +5,24 @@ import SpectacleList2 from 'src/components/SpectacleList2';
 import plaque from './plaque.jpg'
 import ombrelle1 from './ombrelle1.jpg'
 import spectacle from './spectacle.jpg'
+import publicSpectacle from './publicSpectacle.jpg'
 
 const Spectacles = () => {
-  const cssClass = 0;
+
+  var pictureStyle = {
+    width: "100vw",
+    height: "500px",
+    position: "top",
+    backgroundImage: "url(" + publicSpectacle + ")",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  };
+
 
   return (   
     <main className="spectacles__container">
       <DivHiddenUnderNavbar />
-      <div className="spectacles__mainPicture"></div>
+      <div className="spectacles__mainPicture" style={pictureStyle}></div>
       <div className="spectacles__main--content posts-list">
         <div className="spectacles__main--content--left ">
           <h1 className="spectacles__title">Spectacles</h1>
@@ -20,12 +30,12 @@ const Spectacles = () => {
           le théâtre l’Ombrelle magique où les contes sont présentés 
           sous forme d’un grand livre qui s’ouvre devant le spectateur et dont les 
           illustrations prennent vie au fur et à mesure de l’histoire contée.
-Après  L’ombrelle magique, Paul Kichilov crée Le Théâtre d’Ombres et Dessins Vivants : 
-cette fois-ci, les dessins sont réalisés « en direct » devant le public et accompagnent 
-le déroulement du conte en s’entrelaçant avec les marionnettes et les décors.
-A l’aide de son pinceau et de ses peintures, Paul Kichilov nous emmène dans le 
-monde merveilleux des contes populaires.
-Les contes peuvent être racontés en français et en russe.
+          Après  L’ombrelle magique, Paul Kichilov crée Le Théâtre d’Ombres et Dessins Vivants : 
+          cette fois-ci, les dessins sont réalisés « en direct » devant le public et accompagnent 
+          le déroulement du conte en s’entrelaçant avec les marionnettes et les décors.
+          A l’aide de son pinceau et de ses peintures, Paul Kichilov nous emmène dans le 
+          monde merveilleux des contes populaires.
+          Les contes peuvent être racontés en français et en russe.
           </p>
         </div>
         <div className="spectacles__presentation--right ">

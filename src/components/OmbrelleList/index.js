@@ -3,6 +3,7 @@ import { ombrelleData } from './ombrelleData'
 import styled from 'styled-components'
 import { IconContext } from 'react-icons'
 import { FiPlus, FiMinus } from 'react-icons/fi'
+import babaYaga from './babaYaga.jpg'
 
   const AccordionSection = styled.div`
     display: flex;
@@ -53,53 +54,65 @@ import { FiPlus, FiMinus } from 'react-icons/fi'
     flex-direction: row;
     border-bottom: 1px solid #00ffb9;
     border-top: 1px solid #00ffb9;
-
   `;
   
   const ResumeParagraph = styled.p`
       font-size: 18px;
-      padding-top: 30px;
+      padding-top: 20px;
       padding-left: 20px;
+      padding-right: 20px;
       text-align: justify;
       color:black;
-      width:50%;
+      width:100%;
       margin: 0px;
   `;
   const AgeParagraph = styled.p`
       font-size: 18px;
-      padding: 10px 0px 10px 20px;
+      padding: 5px 0px 5px 20px;
       text-align: left;
       margin: 0px;
   `;
   const DurationParagraph = styled.p`
       font-size: 18px;
-      padding: 10px 0px 10px 20px;
+      padding: 5px 0px 5px 20px;
       text-align: left;
       margin: 0px;
   `;
+  
+  const LanguageParagraph = styled.p`
+  font-size: 18px;
+  padding: 5px 0px 20px 20px;
+  text-align: left;
+  margin: 0px;
+  `;
 
   const LeftSide = styled.div`
-      width:'50%';
+      width:50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
 
-    img {
-      width: 100%;
-      height: auto;
-
-    }
+   
   `;
 
   const RightSide = styled.div`
-      width:'50%'
+      width:50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:10px;
+
+    img {
+      width: auto;
+      height: 100%;
+    }
 
   `;
 
   const OmbrelleList = () => {
 
-    const [clicked, setClicked] = useState(false)
+    const [clicked, setClicked] = useState(false);
     
     const toggle = index => {
       if (clicked === index ) {
@@ -108,10 +121,10 @@ import { FiPlus, FiMinus } from 'react-icons/fi'
       }
       setClicked(index)
 
-    }
+    };
 
   return(
-    <IconContext.Provider value={{ color: '#00FFB9', size: '25px'}}>
+    <IconContext.Provider value={{ color: 'white', size: '25px'}}>
       <AccordionSection>
         <Container>
           {ombrelleData.map((item, index) => {
@@ -124,15 +137,15 @@ import { FiPlus, FiMinus } from 'react-icons/fi'
                 {clicked === index ? (
                   <Dropdown>
                     <LeftSide>
-                      <ResumeParagraph className="resume">{item.resume}</ResumeParagraph>
-                      <AgeParagraph>Age : {item.age}</AgeParagraph>
-                      <DurationParagraph>Durée : {item.duration} min</DurationParagraph>
+                      <ResumeParagraph><strong>Résumé : </strong>  {item.resume}</ResumeParagraph>
+                      <AgeParagraph><strong>Age : </strong>  {item.age}</AgeParagraph>
+                      <DurationParagraph><strong>Durée : </strong>  {item.duration} min</DurationParagraph>
+                      <LanguageParagraph><strong>Langue(s) : </strong></LanguageParagraph>
                     </LeftSide>
                     <RightSide>
-                      <img src={item.picture} />
+                      <img src={babaYaga} />
                     </RightSide>
-                  </Dropdown> ) : null }
-                               
+                  </Dropdown> ) : null }               
               </>
             )
           })}

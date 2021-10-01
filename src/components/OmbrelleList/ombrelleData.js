@@ -12,7 +12,7 @@ export const ombrelleData = [
     duration: "25",
     age: "tout public",
     language: ["français", "russe"],
-    picture:"./grandeSoeur.jpg", 
+    picture:"'./grandeSoeur.jpg'", 
     resume: "Alionouchka et son petit frère Ivanouchka quittent leur maison  après la mort de leurs parents. Ivanouchka, en chemin, boit de l’eau d’un ruisseau auprès duquel des chèvres se désaltèrent. Il se transforme en petit chevreau. D’autres épreuves les attendent encore…"
   },
   {
