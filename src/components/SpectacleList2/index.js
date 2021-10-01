@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ombrelleData } from './ombrelleData'
+import { theaterData } from './theaterData'
 import styled from 'styled-components'
 import { IconContext } from 'react-icons'
 import { FiPlus, FiMinus } from 'react-icons/fi'
@@ -114,7 +114,7 @@ import { FiPlus, FiMinus } from 'react-icons/fi'
     <IconContext.Provider value={{ color: '#00FFB9', size: '25px'}}>
       <AccordionSection>
         <Container>
-          {ombrelleData.map((item, index) => {
+          {theaterData.map((item, index) => {
             return ( 
               <>
                 <Wrap onClick={()=>toggle(index)} key={index}>

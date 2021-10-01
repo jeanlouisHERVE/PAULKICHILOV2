@@ -1,8 +1,10 @@
 import './styles.scss';
 import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
-import SpectacleList from 'src/components/SpectacleList';
+import OmbrelleList from 'src/components/OmbrelleList';
+import SpectacleList2 from 'src/components/SpectacleList2';
 import plaque from './plaque.jpg'
 import ombrelle1 from './ombrelle1.jpg'
+import spectacle from './spectacle.jpg'
 
 const Spectacles = () => {
   const cssClass = 0;
@@ -58,7 +60,36 @@ Les contes peuvent être racontés en français et en russe.
           </div>
         </div>
         <div className="ombrelle__accordion">
-          <SpectacleList />
+          <OmbrelleList />
+        </div>
+      </div>
+      <div className="theater__main--content posts-list">
+        <div className="theater__upperPart">
+          <div className="theater__main--content--left ">
+            <h1 className="theater__title">Théâtre de dessin vivant</h1>
+            <p className="theater__presentation">  Comme dans une célèbre 
+            chanson de Vysotsky, les chevaux lancés au galop sur le rouleau 
+            du Théâtre de Dessin Vivant entraînent irrésistiblement la main 
+            de l’artiste dans le tourbillon du conte, ses héros à la poursuite
+             et à l’accomplissement de leur destin, les spectateurs de surprise
+              en surprise dans un univers pourtant si familier.  Dans un conte,
+               il n’y a pas que des chevaux mais aussi des loups, des renards,
+                des sorcières, des bateaux magiques, des châteaux enchantés… 
+                C’est tout cet univers qui fait la trame des contes du Théâtre
+                 de Dessin Vivant, tantôt en ombres chinoises, tantôt en 
+                 marionnettes colorées, et surtout en dessins endiablés. 
+                 Entrez dans la danse, Kotcheî l’immortel et la Baba Yaga 
+                 y mènent la ronde initiatique des êtres de papier, êtres 
+                 de l’esprit, qui, s’ils nous sont si proches c’est qu’en 
+                 réalité, c’est en nous qu’ils dansent.
+            </p>
+          </div>
+          <div className="theater__presentation--right ">
+            <img className="theater__picture" src={spectacle}/>
+          </div>
+        </div>
+        <div className="theater__accordion">
+          <SpectacleList2 />
         </div>
       </div>
       

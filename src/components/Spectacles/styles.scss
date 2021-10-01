@@ -87,4 +87,49 @@
       width: 100%;
     }
   }
+
+  .theater__main--content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-top: 30px;
+  
+  .theater__upperPart {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .theater__main--content--left {
+      width: 60%;
+      padding-right: 40px;
+      
+      .theater__title{
+        padding-bottom: 20px;
+      }
+
+      .theater__presentation {
+        text-align: justify;
+      }
+
+    }
+    .theater__presentation--right {
+      width: 40%;
+
+      .theater__picture {
+        box-shadow: 7px 7px 7px black;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+  }
+
+  .theater__accordion {
+    width: 100%;
+  }
+}
 }
