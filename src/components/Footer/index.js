@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="footer__container">
       <div className="footer__empty"></div>
       <div className="footer__copyright"><p>Paul Kichilov - {year} ©</p></div>
-      <div className="footer__form"></div>    <FooterForm />
+      <FooterForm />   
     </footer>
   );
 };

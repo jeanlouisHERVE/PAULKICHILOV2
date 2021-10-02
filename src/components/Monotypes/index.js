@@ -23,7 +23,7 @@ const Monotypes = () => {
       <div className="monotypes__main--content posts-list">
         <div className="monotypes__main--content--left ">
           <h1 className="monotypes__title">Monotype</h1>
-          <p className="monotypes__presentation"> « "Pour réaliser les batailles
+          <p className="monotypes__presentation"> "Pour réaliser les batailles
            j’ai presque toujours recours à la technique du monotype. Il s’agit
             de peindre à la surface du métal avec l’encre de gravure légèrement
              diluée et non pas de graver la plaque. En se servant de brosses,
