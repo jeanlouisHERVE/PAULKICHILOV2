@@ -1,10 +1,9 @@
 import './styles.scss';
 import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
-import Gallery from 'src/components/Gallery';
 import plaque from './plaque.jpg'
 
 const Gravures = () => {
-  const cssClass = 0;
+
 
   return (   
     <main className="gravures__container">
@@ -35,8 +34,10 @@ const Gravures = () => {
           <img className="gravures__picture" src={plaque}/>
         </div>
       </div>
-      <Gallery />
-</main>
+      <div> 
+      Galerie
+      </div> 
+    </main>
   );
 };
 

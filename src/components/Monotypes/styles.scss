@@ -1,3 +1,51 @@
-.monotype-container {
-    margin-top: 100px;
+
+.monotypes__container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+
+  .monotypes__mainPicture{
+    height: 500px;
+    width: 100vw;
+    background-color: red;
+  }
+
+  .monotypes__main--content {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      background-color: pink;
+    
+    .monotypes__main--content--left {
+      
+      width: 50%;
+      padding-right: 40px;
+      
+      .monotypes__title{
+
+
+      }
+
+      .monotypes__presentation {
+        text-align: justify;
+
+      }
+
+    }
+    .monotypes__presentation--right {
+      width: 50%;
+
+      .monotypes__picture {
+        box-shadow: 7px 7px 7px black;
+        width: 100%;
+        height: auto;
+      }
+
+    }
+
+  }
 }
