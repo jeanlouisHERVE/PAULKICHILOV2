@@ -1,3 +1,5 @@
+@use 'src/styles/vars';
+
 .spectacles__container {
   width: 80%;
   margin-right: auto;
@@ -6,6 +8,7 @@
   align-items: center;
   flex-direction: column;
   z-index: 2;
+  font-family: vars.$roboto;
 
 
   .spectacles__main--content {
@@ -18,7 +21,7 @@
       padding-right: 40px;
       
       .spectacles__title{
-
+        font-family: 600;
       }
 
       .spectacles__presentation {

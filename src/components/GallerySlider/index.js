@@ -29,9 +29,12 @@ const GallerySlider = ({ slides }) => {
     margin-bottom: 0px;
     border-bottom-right-radius: 10px; 
     border-bottom-left-radius: 10px; 
-    background-color: red;
-    vertical-align: middle;
-    text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    color: black;
   `;
 
   if(!Array.isArray(slides) || slides.length <= 0) {

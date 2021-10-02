@@ -1,3 +1,4 @@
+@use 'src/styles/vars';
 
 .monotypes__container {
   width: 80%;
@@ -7,6 +8,7 @@
   align-items: center;
   flex-direction: column;
   z-index: 2;
+  font-family: vars.$roboto;
 
   .monotypes__mainPicture{
     height: 500px;
@@ -18,7 +20,6 @@
       padding: 30px;
       display: flex;
       align-items: center;
-      background-color: pink;
     
     .monotypes__main--content--left {
       

@@ -37,6 +37,7 @@ import babaYaga from './babaYaga.jpg'
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 0px;
+    font-weight: 500;
   }
 
 

@@ -1,3 +1,4 @@
+@use 'src/styles/vars';
 
 .gravures__container {
   width: 80%;
@@ -7,6 +8,8 @@
   align-items: center;
   flex-direction: column;
   z-index: 2;
+  font-family: vars.$roboto;
+  
 
   .gravures__mainPicture{
     height: 500px;
@@ -22,7 +25,7 @@
     
     .gravures__main--content--left {
       
-      width: 60%;
+      width: 50%;
       padding-right: 40px;
       
       .gravures__title{
@@ -37,7 +40,7 @@
 
     }
     .gravures__presentation--right {
-      width: 40%;
+      width: 50%;
 
       .gravures__picture {
         box-shadow: 7px 7px 7px black;

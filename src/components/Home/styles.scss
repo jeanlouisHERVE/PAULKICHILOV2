@@ -1,3 +1,4 @@
+@use 'src/styles/vars';
 
 .home__container {
   width: 80%;
@@ -7,6 +8,7 @@
   align-items: center;
   flex-direction: column;
   z-index: 2;
+  font-family: vars.$roboto;
 
   .home__main--content {
       padding: 30px;
@@ -20,6 +22,7 @@
 
       .home__title {
         margin-bottom: 20px;
+        font-weight: 600;
       }
 
         .home__presentation {
