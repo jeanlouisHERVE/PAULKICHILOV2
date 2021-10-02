@@ -2,13 +2,16 @@ import './styles.scss';
 import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 import plaque from './plaque.jpg'
 
+
+
 const Gravures = () => {
+
 
 
   return (   
     <main className="gravures__container">
       <DivHiddenUnderNavbar />
-      <div className="gravures__mainPicture"></div>
+      <div className="gravures__mainPicture" ></div>
       <div className="gravures__main--content posts-list">
         <div className="gravures__main--content--left ">
           <h1 className="gravures__title">Gravures</h1>

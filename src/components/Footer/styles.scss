@@ -1,9 +1,33 @@
 @use 'src/styles/vars';
 
-.footer__copyright {
-  text-align: center;
-  height: 50px;
-  margin-top: 20px;
-  vertical-align: center;
-  font-family: vars.$roboto;
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  height: 500px;
+  padding: 20px;
+
+  .footer__empty {
+    width: 33%;
+
+  }
+
+  .footer__copyright {
+    text-align: center;
+    height: 50px;
+    margin-top: 20px;
+    vertical-align: center;
+    font-family: vars.$roboto;
+    color:white;
+
+  }
+
+  .footer__form {
+    width: 20%;
+
+
+  }
+
 }
