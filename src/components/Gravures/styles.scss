@@ -41,10 +41,11 @@
     }
     .gravures__presentation--right {
       width: 50%;
-
+      display: flex;
+      justify-content: center;
       .gravures__picture {
         box-shadow: 7px 7px 7px black;
-        width: 100%;
+        width: 80%;
         height: auto;
       }
 

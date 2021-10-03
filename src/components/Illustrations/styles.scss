@@ -1,0 +1,52 @@
+@use 'src/styles/vars';
+
+.illustrations__container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  font-family: vars.$roboto;
+
+  .illustrations__mainPicture{
+    height: 500px;
+    width: 100vw;
+    background-color: red;
+  }
+
+  .illustrations__main--content {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+    
+    .illustrations__main--content--left {
+      
+      width: 50%;
+      padding-right: 40px;
+      
+      .illustrations__title{
+
+
+      }
+
+      .illustrations__presentation {
+        text-align: justify;
+
+      }
+
+    }
+    .illustrations__presentation--right {
+      width: 50%;
+
+      .illustrations__picture {
+        box-shadow: 7px 7px 7px black;
+        width: 100%;
+        height: auto;
+      }
+
+    }
+
+  }
+}

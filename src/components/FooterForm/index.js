@@ -2,19 +2,22 @@ import './styles.scss';
 import { Form, FormGroup, Label, Input, Row, Col, Button, } from 'reactstrap';
 import styled from 'styled-components'
 
-const LabelDiv = styled.div`
-color: white;
-`;
-
 const FormDiv = styled.div`
 display:flex;
 flex-direction: column;
 justify-content: center;
-width: 30%;
+width: 20%;
+position: relative;
+right: 30px
+`;
+
+const LabelDiv = styled.div`
+color: white;
 `;
 
 const h2Div = styled.div`
 color: white;
+font-family: 'Roboto Condensed', sans-serif;
 `;
 
 
@@ -23,14 +26,14 @@ const FooterForm = (props) => {
     <FormDiv>
     <h2>Demande de Renseignements</h2>
     <Row form >
-        <Col md={5}>
-          <FormGroup>
+        <Col >
+          <FormGroup md={5}>
             <LabelDiv for="exampleCity">Nom</LabelDiv>
             <Input type="name" name="name" id="name"/>
           </FormGroup>
         </Col>
-        <Col md={5}>
-          <FormGroup>
+        <Col >
+          <FormGroup md={5}>
             <LabelDiv for="exampleState">Prénom</LabelDiv>
             <Input type="firstname" name="firstname" id="firstname"/>
           </FormGroup>
@@ -44,7 +47,7 @@ const FooterForm = (props) => {
         <LabelDiv for="exampleText">Votre message</LabelDiv>
           <Input type="textarea" name="text" id="exampleText" />
     </FormGroup>
-    <Button className="mt-3" outline color="info" md={6} >Envoi</Button>
+    <Button className="mt-3" outline color="light" md={6} >Envoi</Button>
   </FormDiv>
   );
 }
