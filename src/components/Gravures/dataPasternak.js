@@ -1,4 +1,4 @@
-let dataPasternak = [
+export const dataPasternak = [
   {
     id: 1,
     title: "A la croisée des chemins",
@@ -114,5 +114,4 @@ let dataPasternak = [
     title: "La Voie Lactée",
     picture: "./VoieLactee.jpg",
   }
-
 ]

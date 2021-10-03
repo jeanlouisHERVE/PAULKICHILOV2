@@ -1,0 +1,27 @@
+.gallery__container {
+
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px; 
+
+  @media (max-width: 911px) {
+    .gallery__container {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+  };
+    
+  }
+
+  .gallery__picture {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    cursor: pointer;
+    margin-bottom: 12px;
+  }
+
+}

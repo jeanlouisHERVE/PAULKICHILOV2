@@ -1,11 +1,21 @@
-import { dataPasternak } from './dataPasternak'
-import Increee from './Increee.jpg'
-import Gethsemani from './Gethsemani.jpg'
-import Jardin from './jardin.jpg'
+import './styles.scss';
+import Paul from './Paul.jpg'
 
-const Gallery = (props) => {
+const Gallery = ({pasternakGravures}) => {
+
+  console.log(pasternakGravures)
+
   return (
+    <div className="gallery__container">
+      {pasternakGravures.map((gravure, index) => {
+        return(
+          <div className="gallery__picture" key={index}>
+            <img src={gravure.picture} style={{width: '100%'}} />
+          </div>
+        )
+      })}
 
+    </div>
     
     
   );

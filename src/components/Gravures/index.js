@@ -1,12 +1,12 @@
 import './styles.scss';
+import { dataPasternak }  from './dataPasternak'
 import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 import plaque from './plaque.jpg'
+import Gallery from 'src/components/Gallery'
 
 
 
 const Gravures = () => {
-
-
 
   return (   
     <main className="gravures__container">
@@ -38,7 +38,7 @@ const Gravures = () => {
         </div>
       </div>
       <div> 
-      Galerie
+        <Gallery pasternakGravures = {dataPasternak} />
       </div> 
     </main>
   );
