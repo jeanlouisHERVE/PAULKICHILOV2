@@ -2,16 +2,48 @@ import './styles.scss';
 import { dataPasternak }  from './dataPasternak'
 import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 import plaque from './plaque.jpg'
+import courant from './courant.jpg'
 import Gallery from 'src/components/Gallery'
-
+import Août from './Août.jpg'
+import Bénédiction from './Bénédiction.jpg'
+import Conte from './Conte.jpg'
+import CroiseeDesChemins from './CroiseeDesChemins.jpg'
+import DansLOmbre from './DansLOmbre.jpg'
+import Destin from './Destin.jpg'
+import Diaphane from './Diaphane.jpg'
+import EtoileDeLaNativite from './EtoileDeLaNativite.jpg'
+import Gethsemani from './Gethsemani.jpg'
+import Hamlet from './Hamlet.jpg'
+import Increee from './Increee.jpg'
+import Ivresse from './Ivresse.jpg'
+import LeDegel from './LeDegel.jpg'
+import LumiereIncreee from './LumiereIncreee.jpg'
+import Magdala from './Magdala.jpg'
+import MarieDeMagdala from './MarieDeMagdala.jpg'
+import NuitDiaphane from './NuitDiaphane.jpg'
+import Paul from './Paul.jpg'
+import SemaineSainte from './SemaineSainte.jpg'
+import Séparation from './Séparation.jpg'
+import Silence from './Silence.jpg'
+import VoieLactee from './VoieLactee.jpg'
 
 
 const Gravures = () => {
 
+  var pictureStyle = {
+    width: "100vw",
+    height: "500px",
+    position: "top",
+    backgroundImage: "url(" + courant + ")",
+    backgroundSize: "cover",
+    backgroundPosition: "top",
+  };
+
+
   return (   
     <main className="gravures__container">
       <DivHiddenUnderNavbar />
-      <div className="gravures__mainPicture" ></div>
+      <div className="gravures__mainPicture" style={pictureStyle} ></div>
       <div className="gravures__main--content posts-list">
         <div className="gravures__main--content--left ">
           <h1 className="gravures__title">Gravures</h1>

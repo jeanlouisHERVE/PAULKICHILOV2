@@ -1,5 +1,6 @@
 import './styles.scss';
-import Paul from './Paul.jpg'
+
+
 
 const Gallery = ({pasternakGravures}) => {
 
@@ -14,10 +15,7 @@ const Gallery = ({pasternakGravures}) => {
           </div>
         )
       })}
-
-    </div>
-    
-    
+    </div>   
   );
 };
 

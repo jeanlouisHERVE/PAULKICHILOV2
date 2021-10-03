@@ -13,18 +13,23 @@ right: 30px
 
 const LabelDiv = styled.div`
 color: white;
-`;
-
-const h2Div = styled.div`
-color: white;
 font-family: 'Roboto Condensed', sans-serif;
 `;
 
+const Title = styled.div`
+color: white;
+font-family: 'Roboto Condensed', sans-serif;
+display: flex;
+justify-content: center;
+font-size: x-large;
+padding-bottom: 15px;
+`;
 
-const FooterForm = (props) => {
+
+const FooterForm = () => {
   return (
     <FormDiv>
-    <h2>Demande de Renseignements</h2>
+    <Title>Demande de Renseignements, Devis</Title>
     <Row form >
         <Col >
           <FormGroup md={5}>

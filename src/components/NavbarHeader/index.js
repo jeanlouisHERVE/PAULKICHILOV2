@@ -21,21 +21,21 @@ const NavbarHeader = () => {
 
   const toggle = () => setIsOpen(!isOpen);
 
-  const NavbarBrand = styled.div`
-    font-family: 'Roboto Condensed';
-    width: 20%;
-    display:flex;
-    padding-left: 30px;
-    font-weight: 600px;
-  `;
+  // const NavbarBrand = styled.div`
+  //   font-family: 'Roboto Condensed';
+  //   width: 20%;
+  //   display:flex;
+  //   padding-left: 30px;
+  //   font-weight: 600px;
+  // `;
 
-  const Collapse = styled.div`
-    font-family: 'Roboto Condensed';
-    width: 80%;
-    display:flex;
-    justify-content: flex-end;
-    padding-right: 30px;
-  `;
+  // const Collapse = styled.div`
+  //   font-family: 'Roboto Condensed';
+  //   width: 80%;
+  //   display:flex;
+  //   justify-content: flex-end;
+  //   padding-right: 30px;
+  // `;
 
 
   return (
