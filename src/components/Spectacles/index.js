@@ -24,7 +24,6 @@ const Spectacles = () => {
       <DivHiddenUnderNavbar />
       <div className="spectacles__mainPicture" style={pictureStyle}></div>
       <div className="spectacles__main--content posts-list">
-        <div className="spectacles__main--content--left ">
           <h1 className="spectacles__title">Spectacles</h1>
           <p className="spectacles__presentation"> Paul Kichilov crée d’abord  
           le théâtre l’Ombrelle magique où les contes sont présentés 
@@ -37,10 +36,6 @@ const Spectacles = () => {
           monde merveilleux des contes populaires.
           Les contes peuvent être racontés en français et en russe.
           </p>
-        </div>
-        <div className="spectacles__presentation--right ">
-          <img className="spectacles__picture" src={paulJouant}/>
-        </div>
       </div>
       <div className="ombrelle__main--content posts-list">
         <div className="ombrelle__upperPart">

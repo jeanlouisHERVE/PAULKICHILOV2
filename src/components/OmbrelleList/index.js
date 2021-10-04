@@ -16,30 +16,29 @@ import babaYaga from './babaYaga.jpg'
   `;
 
   const Container = styled.div`
-  position: absolute;
-  top: 10%;
-  width:100%;
-  box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+    position: absolute;
+    top: 10%;
+    width:100%;
+    box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
   `;
 
   const Wrap = styled.div`
-  background: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  cursor:pointer;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    cursor:pointer;
 
   h1 {
-    padding: 2rem;
+    padding-left: 2rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 0px;
     font-weight: 500;
   }
-
 
   span {
     margin-right: 1.5rem;
@@ -53,19 +52,19 @@ import babaYaga from './babaYaga.jpg'
     height: 300px;
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid #00ffb9;
+    border-bottom: 1px solid black;
     border-top: 1px solid #00ffb9;
   `;
   
   const ResumeParagraph = styled.p`
-      font-size: 18px;
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-      text-align: justify;
-      color:black;
-      width:100%;
-      margin: 0px;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    color:black;
+    width:100%;
+    margin: 0px;
   `;
   const AgeParagraph = styled.p`
       font-size: 18px;
@@ -93,8 +92,6 @@ import babaYaga from './babaYaga.jpg'
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-
-   
   `;
 
   const RightSide = styled.div`

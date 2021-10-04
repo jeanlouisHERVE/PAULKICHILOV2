@@ -1,7 +1,7 @@
 @use 'src/styles/vars';
 
 .spectacles__container {
-  width: 80%;
+  width: 60%;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -10,36 +10,27 @@
   z-index: 2;
   font-family: vars.$roboto;
 
-
   .spectacles__main--content {
-      padding: 30px;
-      display: flex;
-      align-items: center;
-    
-    .spectacles__main--content--left {
-      width: 60%;
-      padding-right: 40px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
       
       .spectacles__title{
-        font-family: 600;
+        font-weight: 600;
+        font-size: 40px;
+        text-transform: uppercase;
       }
 
       .spectacles__presentation {
         text-align: justify;
-      }
-
-    }
-    .spectacles__presentation--right {
-      width: 40%;
-
-      .spectacles__picture {
-        box-shadow: 7px 7px 7px black;
+        padding-top: 20px;
         width: 100%;
-        height: auto;
+        font-size: 20px;
+        font-style: italic;
       }
-
     }
-
   }
 
   .ombrelle__main--content {
@@ -51,7 +42,6 @@
       border-radius: 25px;
     
     .ombrelle__upperPart {
-
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -67,7 +57,6 @@
         .ombrelle__presentation {
           text-align: justify;
         }
-  
       }
       .ombrelle__presentation--right {
         width: 40%;
@@ -78,11 +67,11 @@
           height: auto;
         }
       }
-
     }
 
     .ombrelle__accordion {
       width: 100%;
+      background-color: black;
     }
   }
 
@@ -96,7 +85,6 @@
     margin-top: 30px;
   
   .theater__upperPart {
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -112,7 +100,6 @@
       .theater__presentation {
         text-align: justify;
       }
-
     }
     .theater__presentation--right {
       width: 40%;
@@ -123,11 +110,10 @@
         height: auto;
       }
     }
-
   }
 
   .theater__accordion {
     width: 100%;
   }
 }
-}
+
