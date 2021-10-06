@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import { ombrelleData } from './ombrelleData'
-import styled from 'styled-components'
-import { IconContext } from 'react-icons'
-import { FiPlus, FiMinus } from 'react-icons/fi'
-import babaYaga from './babaYaga.jpg'
+import { useState } from 'react';
+import styled from 'styled-components';
+import { IconContext } from 'react-icons';
+import { FiPlus, FiMinus } from 'react-icons/fi';
+import { ombrelleData } from './ombrelleData';
+import babaYaga from './babaYaga.jpg';
 
-  const AccordionSection = styled.div`
+const AccordionSection = styled.div`
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -15,14 +15,14 @@ import babaYaga from './babaYaga.jpg'
     background: white;
   `;
 
-  const Container = styled.div`
+const Container = styled.div`
     position: absolute;
     top: 10%;
     width:100%;
     box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
   `;
 
-  const Wrap = styled.div`
+const Wrap = styled.div`
     background: black;
     color: white;
     display: flex;
@@ -46,7 +46,7 @@ import babaYaga from './babaYaga.jpg'
   }
   `;
 
-  const Dropdown = styled.div`
+const Dropdown = styled.div`
     background: white;
     width: 100%;
     height: 300px;
@@ -55,8 +55,8 @@ import babaYaga from './babaYaga.jpg'
     border-bottom: 1px solid black;
     border-top: 1px solid #00ffb9;
   `;
-  
-  const ResumeParagraph = styled.p`
+
+const ResumeParagraph = styled.p`
     font-size: 18px;
     padding-top: 20px;
     padding-left: 20px;
@@ -66,27 +66,28 @@ import babaYaga from './babaYaga.jpg'
     width:100%;
     margin: 0px;
   `;
-  const AgeParagraph = styled.p`
+
+const AgeParagraph = styled.p`
       font-size: 18px;
       padding: 5px 0px 5px 20px;
       text-align: left;
       margin: 0px;
   `;
-  const DurationParagraph = styled.p`
+const DurationParagraph = styled.p`
       font-size: 18px;
       padding: 5px 0px 5px 20px;
       text-align: left;
       margin: 0px;
   `;
-  
-  const LanguageParagraph = styled.p`
+
+const LanguageParagraph = styled.p`
   font-size: 18px;
   padding: 5px 0px 20px 20px;
   text-align: left;
   margin: 0px;
   `;
 
-  const LeftSide = styled.div`
+const LeftSide = styled.div`
       width:50%;
       display: flex;
       flex-direction: column;
@@ -94,7 +95,7 @@ import babaYaga from './babaYaga.jpg'
       align-items: flex-start;
   `;
 
-  const RightSide = styled.div`
+const RightSide = styled.div`
       width:50%;
       display: flex;
       justify-content: center;
@@ -105,30 +106,25 @@ import babaYaga from './babaYaga.jpg'
       width: auto;
       height: 100%;
     }
-
   `;
 
-  const OmbrelleList = () => {
-
-    const [clicked, setClicked] = useState(false);
-    
-    const toggle = index => {
-      if (clicked === index ) {
-
-        return setClicked(null)
-      }
-      setClicked(index)
-
-    };
-
-  return(
-    <IconContext.Provider value={{ color: 'white', size: '25px'}}>
+const OmbrelleList = () => {
+  const [clicked, setClicked] = useState(false);
+  const toggle = (index) => {
+    if (clicked === index) {
+      return setClicked(null);
+    }
+    setClicked(index);
+  };
+  return (
+    <IconContext.Provider value={{ color: 'white', size: '25px' }}>
       <AccordionSection>
         <Container>
-          {ombrelleData.map((item, index) => {
-            return ( 
+          {
+            ombrelleData.map((item, index) => {
+              return (
               <>
-                <Wrap onClick={()=>toggle(index)} key={index}>
+                <Wrap onClick={() => toggle(index)} key={item.id}>
                   <h1>{item.title}</h1>
                   <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                 </Wrap>
@@ -137,20 +133,23 @@ import babaYaga from './babaYaga.jpg'
                     <LeftSide>
                       <ResumeParagraph><strong>Résumé : </strong>  {item.resume}</ResumeParagraph>
                       <AgeParagraph><strong>Age : </strong>  {item.age}</AgeParagraph>
-                      <DurationParagraph><strong>Durée : </strong>  {item.duration} min</DurationParagraph>
+                      <DurationParagraph>
+                        <strong>Durée : </strong>  {item.duration} min
+                      </DurationParagraph>
                       <LanguageParagraph><strong>Langue(s) : </strong></LanguageParagraph>
                     </LeftSide>
                     <RightSide>
-                      <img src={babaYaga} />
+                      <img src={babaYaga} alt="" />
                     </RightSide>
-                  </Dropdown> ) : null }               
+                  </Dropdown>
+                ) : null}
               </>
-            )
-          })}
+            })
+          }
         </Container>
       </AccordionSection>
     </IconContext.Provider>
-  )
+  );
 };
 
 export default OmbrelleList;
