@@ -3,18 +3,18 @@ import { Route, Switch } from 'react-router-dom';
 // Composants
 // import NavbarHeader from 'src/components/NavbarHeader';
 import NavbarHeader2 from 'src/components/NavbarHeader2';
-import Home from 'src/components/Home';
-import Gravures from 'src/components/Gravures';
-import Monotypes from 'src/components/Monotypes';
-import Illustrations from 'src/components/Illustrations';
-import Exhibitions from 'src/components/Exhibitions';
-import Spectacles from 'src/components/Spectacles';
-import Blog from 'src/components/Blog';
-import Shop from 'src/components/Shop';
-import ConfidentialPolicy from 'src/components/ConfidentialPolicy';
-import LegalMention from 'src/components/LegalMention';
-import Contact from 'src/components/Contact';
-import NotFound from 'src/components/NotFound';
+import Home from 'src/Pages/Home';
+import Gravures from 'src/Pages/Gravures';
+import Monotypes from 'src/Pages/Monotypes';
+import Illustrations from 'src/Pages/Illustrations';
+import Exhibitions from 'src/Pages/Exhibitions';
+import Spectacles from 'src/Pages/Spectacles';
+import Blog from 'src/Pages/Blog';
+import Shop from 'src/Pages/Shop';
+import ConfidentialPolicy from 'src/Pages/ConfidentialPolicy';
+import LegalMention from 'src/Pages/LegalMention';
+import Contact from 'src/Pages/Contact';
+import NotFound from 'src/Pages/NotFound';
 import Footer from 'src/components/Footer';
 
 // data, styles et utilitaires

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../Button/Button';
 import './Navbar.css';
 import Dropdown from '../Dropdown/Dropdown';
+import { fa-times, fa-bars, fa-caret-down } from 'react-icons/fas';
 
 function Navbar() {
   const [click, setClick] = useState(false);
