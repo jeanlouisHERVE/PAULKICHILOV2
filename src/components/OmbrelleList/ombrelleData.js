@@ -1,4 +1,4 @@
-export const ombrelleData = [
+const ombrelleData = [
   {
     id: '1',
     title: 'baba yaga',
@@ -37,3 +37,5 @@ export const ombrelleData = [
   },
 
 ];
+
+export default ombrelleData;

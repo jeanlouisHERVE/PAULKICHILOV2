@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
-import { theaterData } from './theaterData';
+import theaterData from './theaterData';
 
 const AccordionSection = styled.div`
     display: flex;
@@ -110,28 +110,27 @@ const SpectacleList = () => {
       <AccordionSection>
         <Container>
           {
-            theaterData.map((item, index) => {
-               return (
-                <>
-                  <Wrap onClick={()=>toggle(index)} key={item.id}>
-                    <h1>{item.title}</h1>
-                    <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
-                  </Wrap>
-                  {clicked === index ? (
-                    <Dropdown>
-                      <LeftSide>
-                        <ResumeParagraph className="resume">{item.resume}</ResumeParagraph>
-                        <AgeParagraph>Age : {item.age}</AgeParagraph>
-                        <DurationParagraph>Durée : {item.duration} min</DurationParagraph>
-                      </LeftSide>
-                      <RightSide>
-                        <img src={item.picture} alt="" />
-                      </RightSide>
-                    </Dropdown> 
-                    ) : null },           
-                </>
-            })
-          }
+            theaterData.map((item, index) => (
+              <>
+                <Wrap onClick={() => toggle(index)} key={item.id}>
+                  <h1>{item.title}</h1>
+                  <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
+                </Wrap>
+                {clicked === index ? (
+                  <Dropdown>
+                    <LeftSide>
+                      <ResumeParagraph className="resume">{item.resume}</ResumeParagraph>
+                      <AgeParagraph>Age : {item.age}</AgeParagraph>
+                      <DurationParagraph>Durée : {item.duration} min</DurationParagraph>
+                    </LeftSide>
+                    <RightSide>
+                      <img src={item.picture} alt="" />
+                    </RightSide>
+                  </Dropdown>
+                ) : null }
+              </>
+            ))
+            }
         </Container>
       </AccordionSection>
     </IconContext.Provider>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
-import { ombrelleData } from './ombrelleData';
+import ombrelleData from './ombrelleData';
 import babaYaga from './babaYaga.jpg';
 
 const AccordionSection = styled.div`
@@ -121,8 +121,7 @@ const OmbrelleList = () => {
       <AccordionSection>
         <Container>
           {
-            ombrelleData.map((item, index) => {
-              return (
+            ombrelleData.map((item, index) => (
               <>
                 <Wrap onClick={() => toggle(index)} key={item.id}>
                   <h1>{item.title}</h1>
@@ -144,8 +143,8 @@ const OmbrelleList = () => {
                   </Dropdown>
                 ) : null}
               </>
-            })
-          }
+            ))
+            }
         </Container>
       </AccordionSection>
     </IconContext.Provider>
