@@ -1,7 +1,8 @@
 import { Route, Switch } from 'react-router-dom';
 
 // Composants
-import NavbarHeader from 'src/components/NavbarHeader';
+// import NavbarHeader from 'src/components/NavbarHeader';
+import NavbarHeader2 from 'src/components/NavbarHeader2';
 import Home from 'src/components/Home';
 import Gravures from 'src/components/Gravures';
 import Monotypes from 'src/components/Monotypes';
@@ -25,7 +26,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <NavbarHeader />
+      <NavbarHeader2 />
       <Switch>
         <Route path="/" exact>
           <Home />
