@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '../Button/Button';
 import './Navbar.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { fatimes, fabars, faCaretDown } from '@fortawesome/free-brand-svg-icons';
 import Dropdown from '../Dropdown/Dropdown';
-import { fa-times, fa-bars, fa-caret-down } from 'react-icons/fas';
+import { Button } from '../Button/Button';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -38,7 +40,7 @@ function Navbar() {
           <i className="fab fa-firstdraft" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          <i className={click ? { fatimes } : { fabars }} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
