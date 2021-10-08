@@ -1,7 +1,5 @@
 import './styles.scss';
 
-
-
 const Gallery = ({pasternakGravures}) => {
 
   console.log(pasternakGravures)
