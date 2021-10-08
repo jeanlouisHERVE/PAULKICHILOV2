@@ -1,0 +1,87 @@
+@use 'src/styles/vars';
+@import './media';
+
+.navbar {
+  background: rgb(0, 0, 0);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  align-content: center;
+  font-family: vars.$roboto;
+
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 0;
+    vertical-align: middle;
+
+    .navbarImg {
+      width: 200px;
+    }
+    
+  }
+  
+  .menu-icon {
+    display: none;
+
+    .fa-bars {
+      color: #fff;
+    }
+
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: center;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      height: 80px;
+
+      .nav-links {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+      }
+
+      .nav-links-mobile {
+        display: none;
+      }
+
+      .nav-links:hover {
+        background-color: #1888ff;
+        border-radius: 4px;
+        transition: all 0.2s ease-out;
+      }
+
+    }
+
+  }
+
+  .fa-firstdraft {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+  }
+
+}
+
+
+
+
+
+
+
+

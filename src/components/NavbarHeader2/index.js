@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './Navbar.scss';
+import Logo from './LOGONAVBAR.png';
 import Dropdown from '../Dropdown/Dropdown';
 import { Button } from '../Button/Button';
 
@@ -12,7 +13,7 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 1135) {
       setDropdown(false);
     }
     else {
@@ -21,7 +22,7 @@ function Navbar() {
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 1135) {
       setDropdown(false);
     }
     else {
@@ -33,8 +34,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          Paul Kichilov
-          <i className="fab fa-firstdraft" />
+          <img className="navbarImg" src={Logo} alt="" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -84,15 +84,6 @@ function Navbar() {
               onClick={closeMobileMenu}
             >
               Contact
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/sign-up"
-              className="nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
-              Connexion
             </Link>
           </li>
         </ul>
