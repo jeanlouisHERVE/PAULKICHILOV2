@@ -1,5 +1,4 @@
 import './styles.scss';
-import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 import OmbrelleList from 'src/components/OmbrelleList';
 import SpectacleList2 from 'src/components/SpectacleList2';
 import ombrelle1 from './ombrelle1.jpg'
@@ -21,7 +20,6 @@ const Spectacles = () => {
 
   return (   
     <main className="spectacles__container">
-      <DivHiddenUnderNavbar />
       <div className="spectacles__mainPicture" style={pictureStyle}></div>
       <div className="spectacles__main--content posts-list">
           <h1 className="spectacles__title">Spectacles</h1>

@@ -1,5 +1,4 @@
 import './styles.scss';
-import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 import GallerySlider from 'src/components/GallerySlider'
 import { dataSlider } from './dataSlider'
 import monotypeCreation from './monotypeCreation.jpg'
@@ -18,7 +17,6 @@ const Monotypes = () => {
 
   return (   
     <main className="monotypes__container">
-      <DivHiddenUnderNavbar />
       <div className="monotypes__mainPicture" style={pictureStyle}></div>
       <div className="monotypes__main--content posts-list">
         <div className="monotypes__main--content--left ">

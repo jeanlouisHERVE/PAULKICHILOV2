@@ -4,11 +4,9 @@ import {
   TiSocialLinkedinCircular,
   TiSocialFacebookCircular,
   TiSocialInstagramCircular} from 'react-icons/ti';
-import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 
 const Contact = () => (
   <main className="contact__container">
-    <DivHiddenUnderNavbar />
     <div className="contact__picture--under--navbar" />
     <div className="contact__under--navbar">
       <div className="contact__left">

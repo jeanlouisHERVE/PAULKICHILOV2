@@ -1,5 +1,4 @@
 import './styles.scss';
-import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 import exposition1 from './exposition1.jpg';
 
 const Exhibitions = () => {
@@ -14,7 +13,6 @@ const Exhibitions = () => {
 
   return (
     <main>
-      <DivHiddenUnderNavbar />
       <div className="gravures__mainPicture" style={pictureStyle} />
       <h1 className="posts-title">Expositions</h1>
     </main>

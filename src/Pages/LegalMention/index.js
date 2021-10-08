@@ -1,5 +1,4 @@
 import './styles.scss';
-import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 import courant from './courant.jpg'
 
 const LegalMention = () => {
@@ -15,7 +14,6 @@ const LegalMention = () => {
 
   return(
     <main className="legalMention__container">
-    <DivHiddenUnderNavbar />
     <div className="legalMention__mainPicture" style={pictureStyle}></div>
     <div className="legalMention__main--content posts-list">
         <h1 className="legalMention__h1">Mentions Légales</h1>

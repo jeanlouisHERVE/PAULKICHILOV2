@@ -1,6 +1,5 @@
 import './styles.scss';
 import { dataPasternak }  from './dataPasternak'
-import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 import plaque from './plaque.jpg'
 import courant from './courant.jpg'
 import Gallery from 'src/components/Gallery'
@@ -27,10 +26,8 @@ import Séparation from './Séparation.jpg'
 import Silence from './Silence.jpg'
 import VoieLactee from './VoieLactee.jpg'
 
-
 const Gravures = () => {
-
-  var pictureStyle = {
+  const pictureStyle = {
     width: "100vw",
     height: "500px",
     position: "top",
@@ -42,7 +39,6 @@ const Gravures = () => {
 
   return (   
     <main className="gravures__container">
-      <DivHiddenUnderNavbar />
       <div className="gravures__mainPicture" style={pictureStyle} ></div>
       <div className="gravures__main--content posts-list">
         <div className="gravures__main--content--left ">
@@ -69,9 +65,9 @@ const Gravures = () => {
           <img className="gravures__picture" src={plaque}/>
         </div>
       </div>
-      <div> 
+      <div>
         <Gallery pasternakGravures = {dataPasternak} />
-      </div> 
+      </div>
     </main>
   );
 };

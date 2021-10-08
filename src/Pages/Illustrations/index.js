@@ -1,10 +1,8 @@
 import './styles.scss';
-import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
 import illustrationHeader from './illustrationHeader.jpg'
 
 const Illustrations = () => {
-
-  var pictureStyle = {
+  const pictureStyle = {
     width: "100vw",
     height: "500px",
     position: "top",
@@ -13,9 +11,8 @@ const Illustrations = () => {
     backgroundPosition: "center",
   };
 
-  return (   
+  return (
     <main className="illustrations__container">
-      <DivHiddenUnderNavbar />
       <div className="illustrations__mainPicture" style={pictureStyle}></div>
       <div className="illustrations__main--content posts-list">
         <div className="illustrations__main--content--left ">

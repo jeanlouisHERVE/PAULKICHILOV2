@@ -1,13 +1,10 @@
 import './styles.scss';
-import accueil from './accueil.jpg'
 import JumbotronHome from 'src/components/Jumbotron';
-import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
-
+import accueil from './accueil.jpg';
 
 const Home = () => (
 
   <main className="home__container">
-    <DivHiddenUnderNavbar />
     <JumbotronHome />
     <div className="home__main--content posts-list col-12 d-flex flex-row">
       <div className="home__main--content--left">
@@ -15,9 +12,10 @@ const Home = () => (
         <p className="home__presentation"> Né en Russie en 1966 d’un père russe et d’une mère française, 
           Paul KICHILOV arrive en France en 1973.
           Après des études de mathématiques il embrasse la voie artistique.
-          Diplômé de l’Ecole Nationale Supérieure des Arts Décoratifs de Paris en gravure en 1991, il obtient le
-          premier Prix Européen de gravure en Italie en 1991 et 1996.
-          Il réalise de nombreuses expositions personnelles à Paris mais aussi Moscou et Athènes et de nombreuses
+          Diplômé de l’Ecole Nationale Supérieure des Arts Décoratifs de Paris en gravure en 1991, 
+          il obtient le premier Prix Européen de gravure en Italie en 1991 et 1996.
+          Il réalise de nombreuses expositions personnelles à Paris mais aussi Moscou et Athènes et
+          de nombreuses
           participations à des expositions collectives (France, Japon, Danemark…).
           De 1995 à 1998, cours réguliers de danse contemporaine avec Karin Waehner à la Schola
           Cantorum.
@@ -30,10 +28,10 @@ const Home = () => (
         </p>
       </div>
       <div className="home__presentation--right">
-        <img className="home__picture" src={accueil}/>
+        <img className="home__picture" src={accueil} alt="" />
       </div>
     </div>
-</main>
+  </main>
 );
 
 export default Home;
