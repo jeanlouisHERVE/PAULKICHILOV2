@@ -1,25 +1,24 @@
-import { Route, Switch } from 'react-router-dom';
-
-// Composants
-// import NavbarHeader from 'src/components/NavbarHeader';
-import NavbarHeader2 from 'src/components/NavbarHeader2';
-import Home from 'src/Pages/Home';
-import Gravures from 'src/Pages/Gravures';
-import Monotypes from 'src/Pages/Monotypes';
-import Illustrations from 'src/Pages/Illustrations';
-import Exhibitions from 'src/Pages/Exhibitions';
-import Spectacles from 'src/Pages/Spectacles';
-import Blog from 'src/Pages/Blog';
-import Shop from 'src/Pages/Shop';
-import ConfidentialPolicy from 'src/Pages/ConfidentialPolicy';
-import LegalMention from 'src/Pages/LegalMention';
-import Contact from 'src/Pages/Contact';
-import NotFound from 'src/Pages/NotFound';
-import Footer from 'src/components/Footer';
-import FooterContactContainer from 'src/containers/FooterContact';
-
 // data, styles et utilitaires
 import './styles.scss';
+// react router dom
+import { Route, Switch } from 'react-router-dom';
+// Composants
+// import NavbarHeader from 'src/components/NavbarHeader';
+import Blog from 'src/Pages/Blog';
+import ConfidentialPolicy from 'src/Pages/ConfidentialPolicy';
+import Contact from 'src/Pages/Contact';
+import Exhibitions from 'src/Pages/Exhibitions';
+import Footer from 'src/components/Footer';
+import FooterContactContainer from 'src/containers/FooterContact';
+import Gravures from 'src/Pages/Gravures';
+import Home from 'src/Pages/Home';
+import Illustrations from 'src/Pages/Illustrations';
+import LegalMention from 'src/Pages/LegalMention';
+import Monotypes from 'src/Pages/Monotypes';
+import NavbarHeader2 from 'src/components/NavbarHeader2';
+import NotFound from 'src/Pages/NotFound';
+import Shop from 'src/Pages/Shop';
+import Spectacles from 'src/Pages/Spectacles';
 
 // == Composant
 const App = () => (
@@ -29,7 +28,7 @@ const App = () => (
     <Switch>
       <Route path="/" exact>
         <Home />
-        <Footer />
+        <FooterContactContainer />
       </Route>
       <Route path="/galerie/monotypes" exact>
         <Monotypes />
@@ -61,7 +60,7 @@ const App = () => (
       </Route>
       <Route path="/contact">
         <Contact />
-        <FooterContactContainer />
+        <Footer />
       </Route>
       <Route path="/legalMention">
         <LegalMention />

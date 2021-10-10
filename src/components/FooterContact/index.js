@@ -7,7 +7,7 @@ import {
   Column,
   Link,
   Title,
-} from './FooterElements';
+} from './Styles/FooterElements';
 
 export default function FooterContact({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -34,6 +34,6 @@ FooterContact.Title = function FooterTitle({ children, ...restProps }) {
 };
 
 FooterContact.propTypes = {
-  children: PropTypes.string,
-  
+  children: PropTypes.string.isRequired,
+  restProps: PropTypes.string.isRequired,
 };

@@ -1,10 +1,13 @@
 import './styles.scss';
+import Accordion from 'src/components/AccordionSpectacle'
 import OmbrelleList from 'src/components/OmbrelleList';
 import SpectacleList2 from 'src/components/SpectacleList2';
 import ombrelle1 from './ombrelle1.jpg'
 import spectacle from './spectacle.jpg'
 import publicSpectacle from './publicSpectacle.jpg'
 import paulJouant from './paulJouant.jpg'
+import ombrelleData from '../../Utils/ombrelleData';
+import theaterData from '../../Utils/theaterData';
 
 const Spectacles = () => {
 
@@ -63,7 +66,7 @@ const Spectacles = () => {
           </div>
         </div>
         <div className="ombrelle__accordion">
-          <OmbrelleList />
+          <Accordion spectacle={ombrelleData} />
         </div>
       </div>
       <div className="theater__main--content posts-list">
@@ -92,7 +95,7 @@ const Spectacles = () => {
           </div>
         </div>
         <div className="theater__accordion">
-          <SpectacleList2 />
+          <Accordion spectacle={theaterData} />
         </div>
       </div>
       

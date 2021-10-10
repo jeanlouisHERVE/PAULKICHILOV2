@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 80px 60px;
-  background:  radial-gradient(circle, rgba(92, 39, 251, 1) 0%, rgba(112, 71, 247, 1) 100%);
+  background:  black;
+  font-family: 'Roboto Condensed', sans-serif;
 `;
 
 export const Wrapper = styled.div`
@@ -25,7 +26,7 @@ export const Row = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 `;
@@ -44,7 +45,7 @@ export const Link = styled.div`
   text-decoration: none;
 
   &:hover {
-    color: #ff9c00;
+    color: #20a0ff;
     transition: 200ms ease-in;
   }
 `;
