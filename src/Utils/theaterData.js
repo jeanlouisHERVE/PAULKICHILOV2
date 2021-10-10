@@ -4,7 +4,7 @@ const theaterData = [
     duration: '70',
     age: 'tout public',
     language: ['français', 'russe'],
-    picture: './oiseauDeFeu.jpg',
+    picture: 'src/Pages/Spectacles/oiseauDeFeu.jpg',
     resume: 'Ivan Tsarévitch se lance en quête de l’Oiseau de Feu. Comment pourrait-il surmonter les épreuves et les dangers qui l’attendent sur sa route sans l’aide du mystérieux Loup Gris ? Et est-ce la mort qui l’attend au bout ou la félicité ?',
   },
   {

@@ -1,12 +1,11 @@
 import './styles.scss';
-import DivHiddenUnderNavbar from 'src/components/DivHiddenUnderNavbar';
-
+import EmptyDiv from 'src/components/EmptyDiv';
 const NotFound = () => {
   const cssClass = 0;
 
-  return (    
+  return (
     <main className={cssClass}>
-    <DivHiddenUnderNavbar />
+      <EmptyDiv />
       <h1 className="posts-title">Error 404</h1>
     </main>
   );

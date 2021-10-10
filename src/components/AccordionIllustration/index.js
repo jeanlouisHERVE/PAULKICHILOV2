@@ -9,8 +9,9 @@ const AccordionSection = styled.div`
     align-items: center;
     justify-content:center;
     position: relative;
-    height: 65vh;
+    height: 100vh;
     background: white;
+    background: red;
   `;
 
 const Container = styled.div`
@@ -47,7 +48,7 @@ const Wrap = styled.div`
 const Dropdown = styled.div`
     background: white;
     width: 100%;
-    height: 300px;
+    height: auto;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid black;
@@ -71,19 +72,6 @@ const AgeParagraph = styled.p`
       text-align: left;
       margin: 0px;
   `;
-const DurationParagraph = styled.p`
-      font-size: 18px;
-      padding: 5px 0px 5px 20px;
-      text-align: left;
-      margin: 0px;
-  `;
-
-const LanguageParagraph = styled.p`
-  font-size: 18px;
-  padding: 5px 0px 20px 20px;
-  text-align: left;
-  margin: 0px;
-  `;
 
 const LeftSide = styled.div`
       width:50%;
@@ -106,7 +94,7 @@ const RightSide = styled.div`
     }
   `;
 
-const AccordionSpectacle = ({spectacle}) => {
+const AccordionIllustration = ({books}) => {
   const [clicked, setClicked] = useState(false);
   const toggle = (index) => {
     if (clicked === index) {
@@ -119,21 +107,17 @@ const AccordionSpectacle = ({spectacle}) => {
       <AccordionSection>
         <Container>
           {
-            spectacle.map((item, index) => (
+            books.map((item, index) => (
               <>
                 <Wrap onClick={() => toggle(index)} key={item.id}>
-                  <h1>{item.title}</h1>
+                  <h1>{item.title} De {item.author}</h1>
                   <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                 </Wrap>
                 {clicked === index ? (
                   <Dropdown>
                     <LeftSide>
                       <ResumeParagraph><strong>Résumé : </strong>  {item.resume}</ResumeParagraph>
-                      <AgeParagraph><strong>Age : </strong>  {item.age}</AgeParagraph>
-                      <DurationParagraph>
-                        <strong>Durée : </strong>  {item.duration} min
-                      </DurationParagraph>
-                      <LanguageParagraph><strong>Langue(s) : </strong></LanguageParagraph>
+                      <AgeParagraph><strong>Année : </strong>  {item.year}</AgeParagraph>
                     </LeftSide>
                     <RightSide>
                       <img src={item.picture} alt="" />
@@ -149,4 +133,4 @@ const AccordionSpectacle = ({spectacle}) => {
   );
 };
 
-export default AccordionSpectacle;
+export default AccordionIllustration;
