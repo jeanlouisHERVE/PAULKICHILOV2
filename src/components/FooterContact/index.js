@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import {
   Container,
   Wrapper,
@@ -29,4 +31,9 @@ FooterContact.Link = function FooterLink({ children, ...restProps }) {
 
 FooterContact.Title = function FooterTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
+};
+
+FooterContact.propTypes = {
+  children: PropTypes.string,
+  
 };
