@@ -1,7 +1,7 @@
 // data, styles et utilitaires
 import './styles.scss';
 // react router dom
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 // Composants
 // import NavbarHeader from 'src/components/NavbarHeader';
 import Blog from 'src/Pages/Blog';
@@ -25,56 +25,21 @@ const App = () => (
 
   <div className="App">
     <NavbarHeader2 />
-    <Switch>
-      <Route path="/" exact>
-        <Home />
-        <FooterContactContainer />
-      </Route>
-      <Route path="/galerie/monotypes" exact>
-        <Monotypes />
-        <Footer />
-      </Route>
-      <Route path="/galerie/gravures">
-        <Gravures />
-        <Footer />
-      </Route>
-      <Route path="/galerie/illustrations">
-        <Illustrations />
-        <Footer />
-      </Route>
-      <Route path="/expositions">
-        <Exhibitions />
-        <Footer />
-      </Route>
-      <Route path="/spectacles">
-        <Spectacles />
-        <Footer />
-      </Route>
-      <Route path="/blog">
-        <Blog />
-        <Footer />
-      </Route>
-      <Route path="/boutique">
-        <Shop />
-        <Footer />
-      </Route>
-      <Route path="/contact">
-        <Contact />
-        <Footer />
-      </Route>
-      <Route path="/legalMention">
-        <LegalMention />
-        <Footer />
-      </Route>
-      <Route path="/confidentialPolicy">
-        <ConfidentialPolicy />
-        <Footer />
-      </Route>
-      <Route>
-        <NotFound />
-        <Footer />
-      </Route>
-    </Switch>
+    <Routes>
+      <Route exact path="/" element={<><Home /><FooterContactContainer /></>} />
+      <Route exact path="/galerie/monotypes" element={<><Monotypes /><Footer /></>} />
+      <Route exact path="/galerie/gravures" element={<><Gravures /><Footer /></>} />
+      <Route exact path="/galerie/illustrations" element={<><Illustrations /><Footer /></>} />
+      <Route exact path="/galerie/expositions" element={<><Exhibitions /><Footer /></>} />
+      <Route exact path="/spectacles" element={<><Spectacles /><Footer /></>} />
+      <Route exact path="/blog" element={<><Blog /><Footer /></>} />
+      <Route exact path="/boutique" element={<><Shop /><Footer /></>} />
+      <Route exact path="/contact" element={<><Contact /><Footer /></>} />
+      <Route exact path="/legalMention" element={<><LegalMention /><Footer /></>} />
+      <Route exact path="/confidentialPolicy" element={<><ConfidentialPolicy /><Footer /></>} />
+      <Route exact path="contact" element={<><Contact /><Footer /></>} />
+      <Route path="*" element={<><NotFound /><Footer /></>} />
+    </Routes>
   </div>
 );
 
