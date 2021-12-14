@@ -1,5 +1,5 @@
 import './styles.scss';
-import { Form, FormGroup, Label, Input, Row, Col, Button, } from 'reactstrap';
+import { Form, FormGroup, Label, Input, Row, Col, Button } from 'reactstrap';
 import styled from 'styled-components'
 
 const FormDiv = styled.div`
