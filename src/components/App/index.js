@@ -9,7 +9,7 @@ import ConfidentialPolicy from 'src/Pages/ConfidentialPolicy';
 import Contact from 'src/Pages/Contact';
 import Exhibitions from 'src/Pages/Exhibitions';
 import Footer from 'src/components/Footer';
-import FooterContactContainer from 'src/containers/FooterContact';
+import FooterContactContainer from 'src/components/FooterContact';
 import Gravures from 'src/Pages/Gravures';
 import Home from 'src/Pages/Home';
 import Illustrations from 'src/Pages/Illustrations';
@@ -37,7 +37,7 @@ const App = () => (
       <Route exact path="/contact" element={<><Contact /><Footer /></>} />
       <Route exact path="/legalMention" element={<><LegalMention /><Footer /></>} />
       <Route exact path="/confidentialPolicy" element={<><ConfidentialPolicy /><Footer /></>} />
-      <Route exact path="contact" element={<><Contact /><Footer /></>} />
+      <Route exact path="/contact" element={<><Contact /><Footer /></>} />
       <Route path="*" element={<><NotFound /><Footer /></>} />
     </Routes>
   </div>

@@ -1,0 +1,160 @@
+@use 'src/styles/vars';
+
+.contact-form {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0 30px 10px;
+  box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.637);
+  border-radius: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  .contact__left--img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: x-large;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  .form-content {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr) 105px;
+
+    input,
+    textarea {
+      background: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border-style: none;
+      border-bottom: 1px solid black;
+      color: black;
+    }
+
+    input::placeholder, 
+    textarea::placeholder {
+      color: black;
+    }
+
+    input,
+    .email-content,
+    textarea {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    input {
+      padding: 24px 0 12px;
+      
+    }
+
+    .email-content {
+      position: relative;
+
+      .email-content input {
+        width: 100%;
+      }
+      #not-mail {
+        display: none;
+        position: absolute;
+        top: 4px;
+        color: #ff4d4d;
+        right: 0;
+        transform-origin: 50% 50%;
+      }
+
+    }
+
+    @keyframes dongle {
+      0% {
+        transform: translate(0px, 0px);
+      }
+      10% {
+        transform: translate(-10px, 0px);
+      }
+      20% {
+        transform: translate(10px, 0px);
+      }
+      30% {
+        transform: translate(-10px, 0px);
+      }
+      40% {
+        transform: translate(10px, 0px);
+      }
+      50% {
+        transform: translate(-10px, 0px);
+      }
+      60% {
+        transform: translate(10px, 0px);
+      }
+      70% {
+        transform: translate(-10px, 0px);
+      }
+      80% {
+        transform: translate(10px, 0px);
+      }
+      90% {
+        transform: translate(-10px, 0px);
+      }
+      100% {
+        transform: translate(0px, 0px);
+      }
+    }
+    textarea {
+      resize: none;
+      padding: 24px 0;
+    }
+
+    .error::placeholder {
+      color: #ff4d4d;
+    }
+  }
+
+  .button {
+    font-size: 1.3rem;
+    margin-top: 1em;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s;
+    width: 50%;
+    height: 2em;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+  .button:hover {
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+  }
+  
+  .form-message {
+    margin-top: 10px;
+    padding: 12px;
+    opacity: 0;
+    transition: 0.2s ease;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
+  }
+
+}

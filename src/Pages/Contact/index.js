@@ -1,27 +1,16 @@
 import './styles.scss';
-import {
-  TiSocialAtCircular,
-  TiSocialLinkedinCircular,
-  TiSocialFacebookCircular,
-  TiSocialInstagramCircular} from 'react-icons/ti';
+import picture from './rescousse.jpg';
+import ContactForm from '../../components/ContactForm';
 
 const Contact = () => (
   <main className="contact__container">
-    <div className="contact__picture--under--navbar" />
     <div className="contact__under--navbar">
-      <div className="contact__left">
-        <h1 className="posts-title">Contact</h1>
-        <p><strong>Paul KICHILOV</strong></p>
-        <p>Email : <a href="mailto:paul.kichilov@gmail.com?subject=Renseignements">paul.kichilov@gmail.com</a></p> 
-        <p>Tél : <a href="tel:+330760457615">07.60.45.76.15</a></p>
-        <div className="contact__icons">
-          <a className="contact__social--icon" href="#"> <TiSocialInstagramCircular style={{ height: 50, width: 50 }} color="#000000" /></a>
-          <a className="contact__social--icon" href="https://www.facebook.com/Paul.Kichilov.artiste/"> <TiSocialFacebookCircular style={{ height: 50, width: 50 }} color="#000000" /></a>
-          <a className="contact__social--icon" href="#"> <TiSocialLinkedinCircular style={{ height: 50, width: 50 }} color="#000000" /></a>
-          <a className="contact__social--icon" href="#"> <TiSocialAtCircular style={{ height: 50, width: 50 }} color="#000000" /></a>
+      <div className="contact__right" style={{ backgroundImage: `url(${picture})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+      <div className="contact__left--container">
+        <div className="contact__left--form">
+          <ContactForm />
         </div>
       </div>
-      <div className="contact__right" />
     </div>
   </main>
 );

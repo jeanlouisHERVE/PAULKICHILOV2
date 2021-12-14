@@ -1,6 +1,6 @@
 import './styles.scss';
-import Footer from '../components/FooterContact';
-import Icon from '../components/Icons';
+import Footer from '.';
+import Icon from '../Icons';
 
 export default function FooterContactContainer() {
   return (

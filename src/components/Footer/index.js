@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="footer__container">
       <div className="footer__empty" />
       <div className="footer__copyright"><p>Paul Kichilov - {year} ©</p></div>
-      <FooterForm />
+      <div className="footer__empty" />
     </footer>
   );
 };
