@@ -1,7 +1,7 @@
 const ombrelleData = [
   {
     id: '1',
-    title: 'baba yaga',
+    title: 'Baba Yaga',
     duration: '25',
     age: 'tout public',
     language: ['français', 'russe'],
@@ -10,7 +10,7 @@ const ombrelleData = [
   },
   {
     id: '2',
-    title: 'grande soeur et petit frère',
+    title: 'Grande soeur et petit frère',
     duration: '25',
     age: 'tout public',
     language: ['français', 'russe'],
@@ -19,7 +19,7 @@ const ombrelleData = [
   },
   {
     id: '3',
-    title: 'la petite maison, le petit cabanon',
+    title: 'La petite maison, le petit cabanon',
     duration: '25',
     age: '- de 7 ans',
     language: ['français', 'russe'],
@@ -28,7 +28,7 @@ const ombrelleData = [
   },
   {
     id: '4',
-    title: 'le poisson d or',
+    title: 'Le poisson d or',
     duration: '35',
     age: 'tout public',
     language: ['français', 'russe'],

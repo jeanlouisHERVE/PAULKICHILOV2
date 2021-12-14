@@ -32,9 +32,13 @@ const Wrap = styled.div`
   h1 {
     padding-left: 2rem;
     font-size: 1.5rem;
-    text-transform: uppercase;
     margin: 0px;
     font-weight: 500;
+  }
+
+  .id {
+    margin: 0;
+
   }
 
   span {
@@ -124,7 +128,7 @@ const AccordionSpectacle = ({spectacle}) => {
             spectacle.map((item, index) => (
               <>
                 <Wrap onClick={() => toggle(index)} key={item.id}>
-                  <h1>{item.title}</h1>
+                  <h1><span className="id">{item.id}</span>&nbsp;-&nbsp;{item.title}</h1>
                   <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                 </Wrap>
                 {clicked === index ? (

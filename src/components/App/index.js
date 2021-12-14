@@ -9,7 +9,7 @@ import ConfidentialPolicy from 'src/Pages/ConfidentialPolicy';
 import Contact from 'src/Pages/Contact';
 import Exhibitions from 'src/Pages/Exhibitions';
 import Footer from 'src/components/Footer';
-import FooterContactContainer from 'src/components/FooterContact';
+import FooterContactContainer from 'src/components/FooterContact/FooterContact.js';
 import Gravures from 'src/Pages/Gravures';
 import Home from 'src/Pages/Home';
 import Illustrations from 'src/Pages/Illustrations';

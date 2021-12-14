@@ -8,14 +8,11 @@ const AccordionSection = styled.div`
     flex-direction:column;
     align-items: center;
     justify-content:center;
-    position: relative;
-    height: 100vh;
+    height: auto;
     background: white;
-    background: red;
   `;
 
 const Container = styled.div`
-    position: absolute;
     top: 10%;
     width:100%;
     box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
@@ -37,6 +34,17 @@ const Wrap = styled.div`
     text-transform: uppercase;
     margin: 0px;
     font-weight: 500;
+  }
+
+  h1 .title {
+    font-style: italic;
+    margin: 0;
+  }
+
+  .year {
+    color: #1888FF;
+    margin: 0;
+    font-weight: 800;
   }
 
   span {
@@ -96,12 +104,14 @@ const RightSide = styled.div`
 
 const AccordionIllustration = ({books}) => {
   const [clicked, setClicked] = useState(false);
+
   const toggle = (index) => {
     if (clicked === index) {
       return setClicked(null);
     }
     setClicked(index);
   };
+
   return (
     <IconContext.Provider value={{ color: 'white', size: '25px' }}>
       <AccordionSection>
@@ -110,7 +120,7 @@ const AccordionIllustration = ({books}) => {
             books.map((item, index) => (
               <>
                 <Wrap onClick={() => toggle(index)} key={item.id}>
-                  <h1>{item.title} De {item.author}</h1>
+                  <h1><span className="year">{item.year}</span>&nbsp;-&nbsp;<span className="title">{item.title}</span> De {item.author}</h1>
                   <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                 </Wrap>
                 {clicked === index ? (
@@ -120,7 +130,7 @@ const AccordionIllustration = ({books}) => {
                       <AgeParagraph><strong>Année : </strong>  {item.year}</AgeParagraph>
                     </LeftSide>
                     <RightSide>
-                      <img src={item.picture} alt="" />
+                      <img src={item.picture} alt={item.picture} />
                     </RightSide>
                   </Dropdown>
                 ) : null}

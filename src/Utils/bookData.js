@@ -4,7 +4,7 @@ const bookData = [
     title: 'Ivan Vassilievitch',
     author: 'Mikhaïl Boulgakov',
     year: '2021',
-    picture: '',
+    picture: './boulgakov.jpg',
     resume: 'En 1935, l’année de création d’Ivan Vassilievitch, Staline étendait la peine capitale aux enfants \
     de douze ans après avoir interdit tout recours contre les sentences de mort prononcées par les juridictions \
     spéciales du NKVD – la police d’État. C’est avec ce repère historique en tête qu’il faut lire Ivan Vassilievitch. \
@@ -28,7 +28,7 @@ const bookData = [
     title: 'poèmes de Iouri Jivago',
     author: 'Boris Pasternak',
     year: '2020',
-    picture: '',
+    picture: './jivago.jpg',
     resume: 'Connu dans le monde entier comme l\'auteur du Docteur Jivago, Boris Pasternak (1890-1960), \
     prix Nobel de littérature en 1958, est d\'abord un des grands poètes du 20e siècle. Son roman s\'achève \
     par un cycle poétique que le poète romancier attribue à son personnage et qu\'il considérait lui-même \
@@ -49,7 +49,7 @@ const bookData = [
     title: 'L\'Alexiade ',
     author: 'Anne Comnène',
     year: '2019',
-    picture: '',
+    picture: './alexiade.jpg',
     resume: ' Fille aînée de l\'empereur Alexis Ier (qui régna de 1081 à 1118), Anne Comnène, née en 1083, \
     épousa le césar Nicéphore Bryennios et brigua en vain la couronne impériale. L\'échec de ses ambitions \
     politiques lui valut une retraite forcée qu\'elle mit à profit pour reprendre un projet laissé inabouti \
@@ -75,7 +75,7 @@ const bookData = [
     title: 'Bardadamon ou la révélation de la vraie naissance du cubisme',
     author: 'Paul KICHILOV',
     year: '2019',
-    picture: '',
+    picture: './bardadamon.jpg',
     resume: '"L\'histoire cachée d\'un meurtre primordial et de l\'usurpation de la gloire.\
     Mais le meutre parfait n\'existe pas et l\'inconscient finit toujours pas se trahir. Freud\
     confirme Blaise Cendrars : " On touche à la sorcellerie, et je suis sûr qu\'examiné au\
@@ -87,10 +87,22 @@ const bookData = [
   },
   {
     id: '5',
+    title: 'La vie de Tourgueniev',
+    author: 'Boris ZAÏTSEV',
+    year: '2018',
+    picture: './tourgueniev.jpg',
+    resume: 'La vie de Tourgueniev (YMCA-Press, 1932) est une biographie romancée, proposée ici pour la\
+    première fois au public français. Le volume comprend également les essais de Zaïtsev sur Tourgueniev\
+    publiés à différents moments de sa vie, en Russie ou en exil, en russe ou en français, ainsi que des\
+    premiers échos critiques parus dans la presse des émigrés.',
+    shop: 'https://www.editeurs-reunis.fr/',
+  },
+  {
+    id: '6',
     title: 'Le songe de Makar',
     author: ['Paul KICHILOV', 'Vladimir KOROLENKO'],
     year: '2002',
-    picture: '',
+    picture: './makar.jpg',
     resume: '« Makar », signifie dans la tradition russe « celui sur qui tombent toutes les tuiles »...\
     Ainsi, dès le titre, s\'annonce la forme humoristique du récit. Lorsque, au jour du Jugement,\
     on récapitule la somme de misères, d\'injustices, de déboires vécus par Makar, même le juge \
@@ -101,18 +113,6 @@ const bookData = [
     et subtiles gravures de Paul Kichilov permettent de pénétrer plus avant dans un contexte\
     culturel typiquement russe.',
     shop: 'https://www.editionsalternatives.com/site.php?type=P&id=1687',
-  },
-  {
-    id: '6',
-    title: 'La vie de Tourgueniev',
-    author: 'Boris ZAÏTSEV',
-    year: '2018',
-    picture: '',
-    resume: 'La vie de Tourgueniev (YMCA-Press, 1932) est une biographie romancée, proposée ici pour la\
-    première fois au public français. Le volume comprend également les essais de Zaïtsev sur Tourgueniev\
-    publiés à différents moments de sa vie, en Russie ou en exil, en russe ou en français, ainsi que des\
-    premiers échos critiques parus dans la presse des émigrés.',
-    shop: 'https://www.editeurs-reunis.fr/',
   },
 
 ];
