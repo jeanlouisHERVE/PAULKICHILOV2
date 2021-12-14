@@ -8,16 +8,15 @@ const AccordionSection = styled.div`
     flex-direction:column;
     align-items: center;
     justify-content:center;
-    position: relative;
-    height: 65vh;
+    height: auto;
     background: white;
   `;
 
 const Container = styled.div`
-    position: absolute;
     top: 10%;
     width:100%;
     box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+    
   `;
 
 const Wrap = styled.div`
@@ -47,11 +46,14 @@ const Wrap = styled.div`
 const Dropdown = styled.div`
     background: white;
     width: 100%;
-    height: 300px;
+    height: auto;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid black;
     border-top: 1px solid #00ffb9;
+    padding: 10px 0;
+    
+    
   `;
 
 const ResumeParagraph = styled.p`

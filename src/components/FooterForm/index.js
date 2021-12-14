@@ -25,36 +25,33 @@ font-size: x-large;
 padding-bottom: 15px;
 `;
 
-
-const FooterForm = () => {
-  return (
-    <FormDiv>
+const FooterForm = () => (
+  <FormDiv>
     <Title>Demande de Renseignements, Devis</Title>
-    <Row form >
-        <Col >
-          <FormGroup md={5}>
-            <LabelDiv for="exampleCity">Nom</LabelDiv>
-            <Input type="name" name="name" id="name"/>
-          </FormGroup>
-        </Col>
-        <Col >
-          <FormGroup md={5}>
-            <LabelDiv for="exampleState">Prénom</LabelDiv>
-            <Input type="firstname" name="firstname" id="firstname"/>
-          </FormGroup>
-        </Col>
+    <Row form>
+      <Col>
+        <FormGroup md={5}>
+          <LabelDiv for="exampleCity">Nom</LabelDiv>
+          <Input type="name" name="name" id="name"/>
+        </FormGroup>
+      </Col>
+      <Col>
+        <FormGroup md={5}>
+          <LabelDiv for="exampleState">Prénom</LabelDiv>
+          <Input type="firstname" name="firstname" id="firstname"/>
+        </FormGroup>
+      </Col>
     </Row>
     <FormGroup>
       <LabelDiv for="exampleAddress">Email</LabelDiv>
       <Input type="email" name="email" id="email" placeholder="Example@email.com"/>
     </FormGroup>
     <FormGroup>
-        <LabelDiv for="exampleText">Votre message</LabelDiv>
-          <Input type="textarea" name="text" id="exampleText" />
+      <LabelDiv for="exampleText">Votre message</LabelDiv>
+      <Input type="textarea" name="text" id="exampleText" />
     </FormGroup>
-    <Button className="mt-3" outline color="light" md={6} >Envoi</Button>
+    <Button className="mt-3" outline color="light" md={6}>Envoi</Button>
   </FormDiv>
-  );
-}
+);
 
 export default FooterForm;
