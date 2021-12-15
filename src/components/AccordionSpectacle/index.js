@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 import findImgByKey from '../../Utils/img';
+import { Link } from 'react-router-dom';
 
 const AccordionSection = styled.div`
     display: flex;
@@ -92,6 +93,17 @@ const LanguageParagraph = styled.p`
   margin: 0px;
   `;
 
+const Renseignement = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+const Button = styled.div`
+  font-size: 18px;
+  margin: 0px auto;
+  `;
+
 const LeftSide = styled.div`
       width:50%;
       display: flex;
@@ -141,6 +153,9 @@ const AccordionSpectacle = ({spectacle}) => {
                         <strong>Durée : </strong>  {item.duration} min
                       </DurationParagraph>
                       <LanguageParagraph><strong>Langue(s) : </strong></LanguageParagraph>
+                      <Renseignement>
+                        <Link to="/contact"><Button>Demande de renseignements</Button></Link> 
+                      </Renseignement>
                     </LeftSide>
                     <RightSide>
                       <img src={findImgByKey(item.picture)} alt={findImgByKey(item.picture)} />
