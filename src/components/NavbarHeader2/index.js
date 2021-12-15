@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.scss';
 import Logo from './LOGONAVBAR.png';
 import Dropdown from '../Dropdown/Dropdown';
-import { Button } from '../Button/Button';
+import Button from '../Button/Button';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -96,7 +96,7 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        <Button />
+        <Button label="connexion" type="" />
       </nav>
     </>
   );

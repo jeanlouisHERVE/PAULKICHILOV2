@@ -92,7 +92,7 @@ const ContactForm = () => {
   return (
     <form className="contact-form">
       <div className="contact__left--img" style={{ backgroundImage: `url(${contact})`, backgroundSize: 'cover', backgroundPosition: '70% 50%' }} />
-      <h2>Pour tout renseignement ou demande de devis</h2>
+      <h2>Pour tout renseignement et/ou demande de devis</h2>
       <div className="form-content">
         <input
           type="text"

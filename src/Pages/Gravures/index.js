@@ -1,43 +1,19 @@
 import './styles.scss';
-import { dataPasternak }  from './dataPasternak'
-import plaque from './plaque.jpg'
-import courant from './courant.jpg'
-import Gallery from 'src/components/Gallery'
-import Août from './Août.jpg'
-import Bénédiction from './Bénédiction.jpg'
-import Conte from './Conte.jpg'
-import CroiseeDesChemins from './CroiseeDesChemins.jpg'
-import DansLOmbre from './DansLOmbre.jpg'
-import Destin from './Destin.jpg'
-import Diaphane from './Diaphane.jpg'
-import EtoileDeLaNativite from './EtoileDeLaNativite.jpg'
-import Gethsemani from './Gethsemani.jpg'
-import Hamlet from './Hamlet.jpg'
-import Increee from './Increee.jpg'
-import Ivresse from './Ivresse.jpg'
-import LeDegel from './LeDegel.jpg'
-import LumiereIncreee from './LumiereIncreee.jpg'
-import Magdala from './Magdala.jpg'
-import MarieDeMagdala from './MarieDeMagdala.jpg'
-import NuitDiaphane from './NuitDiaphane.jpg'
-import Paul from './Paul.jpg'
-import SemaineSainte from './SemaineSainte.jpg'
-import Séparation from './Séparation.jpg'
-import Silence from './Silence.jpg'
-import VoieLactee from './VoieLactee.jpg'
+import { dataPasternak } from '../../Utils/dataPasternak';
+import plaque from '../../assets/img/plaque.jpg';
+import Gallery from '../../components/Gallery';
 
 const Gravures = () => {
   const pictureStyle = {
-    width: "100vw",
-    height: "500px",
-    position: "top",
-    backgroundImage: "url(" + courant + ")",
-    backgroundSize: "cover",
-    backgroundPosition: "top",
+    width: '100vw',
+    height: '500px',
+    position: 'top',
+    backgroundImage: 'url(" + courant + ")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'top',
   };
 
-
-  return (   
+  return (
     <main className="gravures__container">
       <div className="gravures__mainPicture" style={pictureStyle} ></div>
       <div className="gravures__main--content posts-list">
@@ -62,11 +38,11 @@ const Gravures = () => {
           </p>
         </div>
         <div className="gravures__presentation--right ">
-          <img className="gravures__picture" src={plaque}/>
+          <img className="gravures__picture" src={plaque} alt={plaque} />
         </div>
       </div>
       <div>
-        <Gallery pasternakGravures = {dataPasternak} />
+        <Gallery pasternakGravures={dataPasternak} />
       </div>
     </main>
   );
