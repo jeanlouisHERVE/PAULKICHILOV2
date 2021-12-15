@@ -2,13 +2,13 @@
 
 .spectacles__container {
   width: 60%;
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   z-index: 2;
   font-family: vars.$roboto;
-
+  
   .spectacles__main--content {
     padding: 30px;
     display: flex;

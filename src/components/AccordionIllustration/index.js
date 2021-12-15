@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 import findImgByKey from '../../Utils/img';
+import { Link } from 'react-router-dom';
 
 const AccordionSection = styled.div`
     display: flex;
@@ -82,6 +83,17 @@ const AgeParagraph = styled.p`
       margin: 0px;
   `;
 
+const Renseignement = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+const Button = styled.div`
+  font-size: 18px;
+  margin: 0px auto;
+`;
+
 const LeftSide = styled.div`
       width:50%;
       display: flex;
@@ -129,6 +141,9 @@ const AccordionIllustration = ({books}) => {
                     <LeftSide>
                       <ResumeParagraph><strong>Résumé : </strong>  {item.resume}</ResumeParagraph>
                       <AgeParagraph><strong>Année : </strong>  {item.year}</AgeParagraph>
+                      <Renseignement>
+                        <a href={item.shop} target="_blank"><Button>Se procurer l'ouvrage</Button></a>
+                      </Renseignement>
                     </LeftSide>
                     <RightSide>
                       <img src={findImgByKey(item.picture)} alt={findImgByKey(item.picture)} />

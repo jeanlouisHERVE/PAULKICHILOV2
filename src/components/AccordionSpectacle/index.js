@@ -154,7 +154,7 @@ const AccordionSpectacle = ({spectacle}) => {
                       </DurationParagraph>
                       <LanguageParagraph><strong>Langue(s) : </strong></LanguageParagraph>
                       <Renseignement>
-                        <Link to="/contact"><Button>Demande de renseignements</Button></Link> 
+                        <Link to="/contact"><Button>Demande de renseignements</Button></Link>
                       </Renseignement>
                     </LeftSide>
                     <RightSide>
