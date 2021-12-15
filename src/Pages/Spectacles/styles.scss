@@ -2,8 +2,7 @@
 
 .spectacles__container {
   width: 60%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 20px auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -108,6 +107,7 @@
         box-shadow: 7px 7px 7px black;
         width: 100%;
         height: auto;
+        margin-bottom: 20px;
       }
     }
   }
