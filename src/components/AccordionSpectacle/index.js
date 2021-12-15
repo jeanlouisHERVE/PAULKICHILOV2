@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
+import findImgByKey from '../../Utils/img';
 
 const AccordionSection = styled.div`
     display: flex;
@@ -107,8 +108,8 @@ const RightSide = styled.div`
       padding:10px;
 
     img {
-      width: auto;
-      height: 100%;
+      width: 100%;
+      height: auto;
     }
   `;
 
@@ -142,7 +143,7 @@ const AccordionSpectacle = ({spectacle}) => {
                       <LanguageParagraph><strong>Langue(s) : </strong></LanguageParagraph>
                     </LeftSide>
                     <RightSide>
-                      <img src={item.picture} alt="" />
+                      <img src={findImgByKey(item.picture)} alt={findImgByKey(item.picture)} />
                     </RightSide>
                   </Dropdown>
                 ) : null}

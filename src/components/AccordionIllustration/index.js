@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
+import findImgByKey from '../../Utils/img';
 
 const AccordionSection = styled.div`
     display: flex;
@@ -97,8 +98,8 @@ const RightSide = styled.div`
       padding:10px;
 
     img {
-      width: auto;
-      height: 100%;
+      max-width: 300px;
+      height: auto;
     }
   `;
 
@@ -130,7 +131,7 @@ const AccordionIllustration = ({books}) => {
                       <AgeParagraph><strong>Année : </strong>  {item.year}</AgeParagraph>
                     </LeftSide>
                     <RightSide>
-                      <img src={item.picture} alt={item.picture} />
+                      <img src={findImgByKey(item.picture)} alt={findImgByKey(item.picture)} />
                     </RightSide>
                   </Dropdown>
                 ) : null}
