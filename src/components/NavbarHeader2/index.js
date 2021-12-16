@@ -13,6 +13,9 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   const onMouseEnter = () => {
+    console.log('dropdown enter');
+    console.log(dropdown);
+    console.log(window.innerWidth);
     if (window.innerWidth < 1135) {
       setDropdown(false);
     }
@@ -22,6 +25,8 @@ function Navbar() {
   };
 
   const onMouseLeave = () => {
+    console.log('dropdown leave');
+    console.log(dropdown);
     if (window.innerWidth < 1135) {
       setDropdown(false);
     }
