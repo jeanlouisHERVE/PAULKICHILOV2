@@ -68,6 +68,8 @@
   }
 
   .nav-menu.active {
+    margin:0;
+
     @media (max-width: 1335px) {
       background: black;
       padding-left: 0;
@@ -85,8 +87,8 @@
     list-style: none;
     text-align: center;
     width: 60vw;
+    margin: 0;
     justify-content: center;
-    
     height: 100%;
 
     @media (max-width: 1335px) {
@@ -105,12 +107,14 @@
     .nav-item {
       display: flex;
       align-items: center;
+      justify-content: center;
       height: 100%;
 
       .nav-links {
         color: white;
         text-decoration: none;
         padding: 0.5rem 1rem;
+        margin: auto 0;
 
         @media (max-width: 1335px) {
           text-align: center;
