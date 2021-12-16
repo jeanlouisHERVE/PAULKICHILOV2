@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 import findImgByKey from '../../Utils/img';
-import { Link } from 'react-router-dom';
 
 const AccordionSection = styled.div`
     display: flex;

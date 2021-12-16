@@ -1,7 +1,7 @@
 import GRAVURES_DATA from './gravures.data';
 
 const INITIAL_STATE = {
-  gravures: GRAVURES_DATA,
+  gravuresCollections: GRAVURES_DATA,
 };
 
 const gravuresReducer = (state = INITIAL_STATE, action) => {

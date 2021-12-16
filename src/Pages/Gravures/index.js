@@ -1,27 +1,21 @@
 import './styles.scss';
-import { connect, useSelector } from 'react-redux';
-import { useParams } from 'react-router';
-import { selectCollection } from '../../redux/gravures/gravures.selectors';
-import { dataPasternak } from '../../Utils/dataPasternak';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+import { selectGravuresCollections } from '../../redux/gravures/gravures.selectors';
 import plaque from '../../assets/img/plaque.jpg';
-import Gallery from '../../components/Gallery';
-import GravureCollection from '../../components/GravureCollection';
+import courant from '../../assets/img/courant.jpg';
+import GravureCollectionPreview from '../../components/GravureCollectionPreview';
 
-const Gravures = () => {
+const Gravures = ({ gravuresCollections }) => {
   const pictureStyle = {
     width: '100vw',
     height: '500px',
     position: 'top',
-    backgroundImage: 'url(" + courant + ")',
+    backgroundImage: " url(" + courant + ") ",
     backgroundSize: 'cover',
     backgroundPosition: 'top',
   };
-
-  const params = useParams();
-  console.log(params);
-  const collection = useSelector(selectCollection(params.collectionId));
-  const { items } = collection;
-  const { title } = collection;
 
   return (
     <main className="gravures__container">
@@ -51,23 +45,24 @@ const Gravures = () => {
           <img className="gravures__picture" src={plaque} alt={plaque} />
         </div>
       </div>
-      <div className="collection-page">
-        <h2 className="title">{title}</h2>
-        <div className="items">
-          {items.map((item) => (
-            <GravureCollection key={item.id} item={item} />
-          ))}
-        </div>
+      <div className="gravures__collections-overview">
+        { gravuresCollections.map(({ id, ...otherCollectionsProps }) => (
+          <GravureCollectionPreview key={id} {...otherCollectionsProps} />
+        ))}
       </div>
-      <div>
+      {/* <div>
         <Gallery pasternakGravures={dataPasternak} />
-      </div>
+      </div> */}
     </main>
   );
 };
 
-const mapStateToProps = (state, ownProps) => ({
-  gravures: selectCollection(ownProps.match.params.collectionId)(state),
+Gravures.propTypes = {
+  gravuresCollections: PropTypes.array.isRequired,
+};
+
+const mapStateToProps = createStructuredSelector({
+  gravuresCollections: selectGravuresCollections,
 });
 
 export default connect(mapStateToProps)(Gravures);

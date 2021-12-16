@@ -2,17 +2,17 @@ import { createSelector } from 'reselect';
 
 const selectGravures = (state) => state.gravures;
 
-export const selectCollections = createSelector(
+export const selectGravuresCollections = createSelector(
   [selectGravures],
-  (gravuresCollections) => gravuresCollections.collections,
+  (gravures) => gravures.gravuresCollections,
 );
 
 export const selectCollectionsForPreview = createSelector(
-  [selectCollections],
-  (collections) => Object.keys(collections).map((key) => collections[key]),
+  [selectGravuresCollections],
+  (gravuresCollections) => Object.keys(gravuresCollections).map((key) => gravuresCollections[key]),
 );
 
 export const selectCollection = (collectionUrlParam) => createSelector(
-  [selectCollections],
-  (collections) => collections[collectionUrlParam],
+  [selectGravuresCollections],
+  (gravuresCollections) => gravuresCollections[collectionUrlParam],
 );

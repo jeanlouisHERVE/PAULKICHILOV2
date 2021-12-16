@@ -1,9 +1,10 @@
 import './styles.scss';
+import PropTypes from 'prop-types';
 
 const GravureCollection = ({ item }) => {
-  const { name, price, imageUrl} = item;
+  const { name, price, imageUrl } = item;
 
-  return(
+  return (
     <div className="collection-item">
       <div className="image" style={{ backgroundImage: `url(${imageUrl})` }} />
       <div className="collection-footer">
@@ -12,6 +13,10 @@ const GravureCollection = ({ item }) => {
       </div>
     </div>
   );
+};
+
+GravureCollection.propTypes = {
+  item: PropTypes.array.isRequired,
 };
 
 export default GravureCollection;
