@@ -87,6 +87,7 @@ const Renseignement = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 `;
 
 const Button = styled.div`
@@ -105,6 +106,7 @@ const LeftSide = styled.div`
 const RightSide = styled.div`
       width:50%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       padding:10px;
@@ -112,6 +114,8 @@ const RightSide = styled.div`
     img {
       max-width: 300px;
       height: auto;
+      box-shadow: 7px 7px 7px black;
+      margin-bottom: 20px;
     }
   `;
 
@@ -141,12 +145,13 @@ const AccordionIllustration = ({books}) => {
                     <LeftSide>
                       <ResumeParagraph><strong>Résumé : </strong>  {item.resume}</ResumeParagraph>
                       <AgeParagraph><strong>Année : </strong>  {item.year}</AgeParagraph>
-                      <Renseignement>
-                        <a href={item.shop} target="_blank"><Button>Se procurer l'ouvrage</Button></a>
-                      </Renseignement>
+                      
                     </LeftSide>
                     <RightSide>
                       <img src={findImgByKey(item.picture)} alt={findImgByKey(item.picture)} />
+                      <Renseignement>
+                        <a href={item.shop} rel="noreferrer" target="_blank"><Button>Se procurer l'ouvrage</Button></a>
+                      </Renseignement>
                     </RightSide>
                   </Dropdown>
                 ) : null}

@@ -2,8 +2,8 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
-import findImgByKey from '../../Utils/img';
 import { Link } from 'react-router-dom';
+import findImgByKey from '../../Utils/img';
 
 const AccordionSection = styled.div`
     display: flex;
@@ -18,7 +18,6 @@ const Container = styled.div`
     top: 10%;
     width:100%;
     box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
-    
   `;
 
 const Wrap = styled.div`
@@ -58,8 +57,6 @@ const Dropdown = styled.div`
     border-bottom: 1px solid black;
     border-top: 1px solid #00ffb9;
     padding: 10px 0;
-    
-    
   `;
 
 const ResumeParagraph = styled.p`
@@ -97,7 +94,7 @@ const Renseignement = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-`;
+  `;
 
 const Button = styled.div`
   font-size: 18px;
@@ -122,6 +119,7 @@ const RightSide = styled.div`
     img {
       width: 100%;
       height: auto;
+      box-shadow: 7px 7px 7px black;
     }
   `;
 

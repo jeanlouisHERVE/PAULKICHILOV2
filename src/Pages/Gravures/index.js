@@ -1,7 +1,11 @@
 import './styles.scss';
+import { connect, useSelector } from 'react-redux';
+import { useParams } from 'react-router';
+import { selectCollection } from '../../redux/gravures/gravures.selectors';
 import { dataPasternak } from '../../Utils/dataPasternak';
 import plaque from '../../assets/img/plaque.jpg';
 import Gallery from '../../components/Gallery';
+import GravureCollection from '../../components/GravureCollection';
 
 const Gravures = () => {
   const pictureStyle = {
@@ -13,9 +17,15 @@ const Gravures = () => {
     backgroundPosition: 'top',
   };
 
+  const params = useParams();
+  console.log(params);
+  const collection = useSelector(selectCollection(params.collectionId));
+  const { items } = collection;
+  const { title } = collection;
+
   return (
     <main className="gravures__container">
-      <div className="gravures__mainPicture" style={pictureStyle} ></div>
+      <div className="gravures__mainPicture" style={pictureStyle} />
       <div className="gravures__main--content posts-list">
         <div className="gravures__main--content--left ">
           <h1 className="gravures__title">Gravures</h1>
@@ -41,6 +51,14 @@ const Gravures = () => {
           <img className="gravures__picture" src={plaque} alt={plaque} />
         </div>
       </div>
+      <div className="collection-page">
+        <h2 className="title">{title}</h2>
+        <div className="items">
+          {items.map((item) => (
+            <GravureCollection key={item.id} item={item} />
+          ))}
+        </div>
+      </div>
       <div>
         <Gallery pasternakGravures={dataPasternak} />
       </div>
@@ -48,4 +66,8 @@ const Gravures = () => {
   );
 };
 
-export default Gravures;
+const mapStateToProps = (state, ownProps) => ({
+  gravures: selectCollection(ownProps.match.params.collectionId)(state),
+});
+
+export default connect(mapStateToProps)(Gravures);
