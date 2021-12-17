@@ -76,7 +76,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (name && isEmail() && message) {
-      sendFeedback('template_5k1pxsz', {
+      sendFeedback('template_v70uewh', {
         name,
         company,
         phone,

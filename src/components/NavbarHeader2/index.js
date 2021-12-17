@@ -15,8 +15,8 @@ function Navbar() {
   const onMouseEnter = () => {
     console.log('dropdown enter');
     console.log(dropdown);
-    console.log(window.innerWidth);
-    if (window.innerWidth < 1135) {
+    console.log(window.screen.width);
+    if (window.screen.width < 1135) {
       setDropdown(false);
     }
     else {
@@ -27,7 +27,7 @@ function Navbar() {
   const onMouseLeave = () => {
     console.log('dropdown leave');
     console.log(dropdown);
-    if (window.innerWidth < 1135) {
+    if (window.screen.width < 1135) {
       setDropdown(false);
     }
     else {
