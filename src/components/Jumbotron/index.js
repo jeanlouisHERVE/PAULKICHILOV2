@@ -7,7 +7,7 @@ const JumbotronHome = () => {
     width: '100vw',
     height: '500px',
     position: 'top',
-    backgroundImage: `url(" + ${Background} + ")`,
+    backgroundImage: "url(" + Background + ")",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   };

@@ -144,7 +144,6 @@ const AccordionIllustration = ({books}) => {
                     <LeftSide>
                       <ResumeParagraph><strong>Résumé : </strong>  {item.resume}</ResumeParagraph>
                       <AgeParagraph><strong>Année : </strong>  {item.year}</AgeParagraph>
-                      
                     </LeftSide>
                     <RightSide>
                       <img src={findImgByKey(item.picture)} alt={findImgByKey(item.picture)} />
