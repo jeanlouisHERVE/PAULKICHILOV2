@@ -1,5 +1,3 @@
-import './styles.scss';
-import { Jumbotron, Container } from 'reactstrap';
 import Background from './courant.jpg';
 
 const JumbotronHome = () => {
@@ -14,9 +12,9 @@ const JumbotronHome = () => {
 
   return (
     <div className="jumbotron__main">
-      <Jumbotron fluid className="jumbotron">
-        <Container fluid className="jumbotron__container" style={sectionStyle} />
-      </Jumbotron>
+      <div className="jumbotron">
+        <div className="jumbotron__container" style={sectionStyle} />
+      </div>
     </div>
   );
 };

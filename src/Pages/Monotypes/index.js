@@ -1,5 +1,5 @@
 import './styles.scss';
-import GallerySlider from 'src/components/GallerySlider'
+import GallerySlider from '../../components/GallerySlider'
 import { dataSlider } from './dataSlider'
 import monotypeCreation from './monotypeCreation.jpg'
 import BatailleD from './BatailleD.jpg'

@@ -1,5 +1,5 @@
 import './styles.scss';
-import EmptyDiv from 'src/components/EmptyDiv';
+import EmptyDiv from '../../components/EmptyDiv';
 const NotFound = () => {
   const cssClass = 0;
 

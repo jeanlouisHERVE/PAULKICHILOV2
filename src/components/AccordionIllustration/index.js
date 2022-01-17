@@ -118,6 +118,10 @@ const RightSide = styled.div`
     }
   `;
 
+    const WrapContainer = styled.div`
+
+    `;
+
 const AccordionIllustration = ({books}) => {
   const [clicked, setClicked] = useState(false);
 
@@ -134,8 +138,8 @@ const AccordionIllustration = ({books}) => {
         <Container>
           {
             books.map((item, index) => (
-              <>
-                <Wrap onClick={() => toggle(index)} key={item.id}>
+              <WrapContainer key={item.id}>
+                <Wrap onClick={() => toggle(index)} >
                   <h1><span className="year">{item.year}</span>&nbsp;-&nbsp;<span className="title">{item.title}</span> De {item.author}</h1>
                   <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                 </Wrap>
@@ -153,7 +157,7 @@ const AccordionIllustration = ({books}) => {
                     </RightSide>
                   </Dropdown>
                 ) : null}
-              </>
+              </WrapContainer>
             ))
             }
         </Container>

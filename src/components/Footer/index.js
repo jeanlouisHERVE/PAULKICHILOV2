@@ -1,5 +1,4 @@
 import './styles.scss';
-import FooterForm from 'src/components/FooterForm';
 
 const Footer = () => {
   const now = new Date();

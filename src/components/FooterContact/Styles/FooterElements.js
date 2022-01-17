@@ -4,6 +4,7 @@ export const Container = styled.div`
   padding: 80px 60px;
   background:  black;
   font-family: 'Roboto Condensed', sans-serif;
+  width: 100vw;
 `;
 
 export const Wrapper = styled.div`
@@ -44,6 +45,22 @@ export const Link = styled.div`
   font-size: 18px;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    color: #20a0ff;
+    transition: 200ms ease-in;
+  }
+`;
+
+export const LinkSocial = styled.div`
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
   &:hover {
     color: #20a0ff;

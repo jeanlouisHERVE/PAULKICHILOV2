@@ -1,5 +1,5 @@
 import './styles.scss';
-import AccordionSpectacle from 'src/components/AccordionSpectacle';
+import AccordionSpectacle from '../../components/AccordionSpectacle';
 import ombrelle1 from './ombrelle1.jpg';
 import publicSpectacle from './publicSpectacle.jpg';
 import paulJouant from './paulJouant.jpg';

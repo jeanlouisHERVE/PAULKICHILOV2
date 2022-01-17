@@ -1,7 +1,7 @@
 import './styles.scss';
 import illustrationHeader from './illustrationHeader.jpg';
-import Accordion from 'src/components/AccordionIllustration';
-import EmptyDiv from 'src/components/EmptyDiv'
+import Accordion from '../../components/AccordionIllustration';
+import EmptyDiv from '../../components/EmptyDiv'
 import books from '../../Utils/bookData';
 
 const Illustrations = () => {

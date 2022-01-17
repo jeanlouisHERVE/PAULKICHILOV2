@@ -4,21 +4,21 @@ import './styles.scss';
 import { Route, Routes } from 'react-router-dom';
 // Composants
 // import NavbarHeader from 'src/components/NavbarHeader';
-import Blog from 'src/Pages/Blog';
-import ConfidentialPolicy from 'src/Pages/ConfidentialPolicy';
-import Contact from 'src/Pages/Contact';
-import Exhibitions from 'src/Pages/Exhibitions';
-import Footer from 'src/components/Footer';
-import FooterContactContainer from 'src/components/FooterContact/FooterContact.js';
-import Gravures from 'src/Pages/Gravures';
-import Home from 'src/Pages/Home';
-import Illustrations from 'src/Pages/Illustrations';
-import LegalMention from 'src/Pages/LegalMention';
-import Monotypes from 'src/Pages/Monotypes';
-import NavbarHeader2 from 'src/components/NavbarHeader2';
-import NotFound from 'src/Pages/NotFound';
-import Shop from 'src/Pages/Shop';
-import Spectacles from 'src/Pages/Spectacles';
+import Blog from '../../Pages/Blog';
+import ConfidentialPolicy from '../../Pages/ConfidentialPolicy';
+import Contact from '../../Pages/Contact';
+import Exhibitions from '../../Pages/Exhibitions';
+import Footer from '../../components/Footer';
+import FooterContactContainer from '../../components/FooterContact';
+import Gravures from '../../Pages/Gravures';
+import Home from '../../Pages/Home';
+import Illustrations from '../../Pages/Illustrations';
+import LegalMention from '../../Pages/LegalMention';
+import Monotypes from '../../Pages/Monotypes';
+import NavbarHeader2 from '../../components/NavbarHeader2';
+import NotFound from '../../Pages/NotFound';
+import Shop from '../../Pages/Shop';
+import Spectacles from '../../Pages/Spectacles';
 
 // == Composant
 const App = () => (
@@ -26,7 +26,7 @@ const App = () => (
   <div className="App">
     <NavbarHeader2 />
     <Routes>
-      <Route exact path="/" element={<><Home /><FooterContactContainer /></>} />
+      <Route exact path="/" element={<><Home /><FooterContactContainer/></>} />
       <Route exact path="/galerie/monotypes" element={<><Monotypes /><Footer /></>} />
       <Route exact path="/galerie/gravures" element={<><Gravures /><Footer /></>} />
       <Route exact path="/galerie/illustrations" element={<><Illustrations /><Footer /></>} />
